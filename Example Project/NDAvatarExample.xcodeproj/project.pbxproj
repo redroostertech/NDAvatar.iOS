@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
-		294E36EE1D5E0B72002230DF /* AvatarImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		294E36EE1D5E0B72002230DF /* NDAvatarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36F11D5E0B72002230DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAvatarViewController.swift; sourceTree = "<group>"; };
 		294E36F61D5E0B72002230DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		294E36EF1D5E0B72002230DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				294E36EE1D5E0B72002230DF /* AvatarImageViewExample.app */,
+				294E36EE1D5E0B72002230DF /* NDAvatarExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		294E36ED1D5E0B72002230DF /* AvatarImageViewExample */ = {
+		294E36ED1D5E0B72002230DF /* NDAvatarExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "AvatarImageViewExample" */;
+			buildConfigurationList = 294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarExample" */;
 			buildPhases = (
 				0FE37A1BF924A7E879E184F4 /* [CP] Check Pods Manifest.lock */,
 				294E36EA1D5E0B72002230DF /* Sources */,
@@ -154,9 +154,9 @@
 			);
 			dependencies = (
 			);
-			name = AvatarImageViewExample;
+			name = NDAvatarExample;
 			productName = AvatarImageViewExample;
-			productReference = 294E36EE1D5E0B72002230DF /* AvatarImageViewExample.app */;
+			productReference = 294E36EE1D5E0B72002230DF /* NDAvatarExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -171,15 +171,17 @@
 				TargetAttributes = {
 					294E36ED1D5E0B72002230DF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 77YXYQDT3J;
 						LastSwiftMigration = 0800;
 					};
 				};
 			};
-			buildConfigurationList = 294E36E91D5E0B72002230DF /* Build configuration list for PBXProject "AvatarImageViewExample" */;
+			buildConfigurationList = 294E36E91D5E0B72002230DF /* Build configuration list for PBXProject "NDAvatarExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -188,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				294E36ED1D5E0B72002230DF /* AvatarImageViewExample */,
+				294E36ED1D5E0B72002230DF /* NDAvatarExample */,
 			);
 		};
 /* End PBXProject section */
@@ -335,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -400,11 +402,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spectrum.AvatarImageViewExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarExample;
+				PRODUCT_NAME = NDAvatarExample;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -415,11 +418,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spectrum.AvatarImageViewExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarExample;
+				PRODUCT_NAME = NDAvatarExample;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -427,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		294E36E91D5E0B72002230DF /* Build configuration list for PBXProject "AvatarImageViewExample" */ = {
+		294E36E91D5E0B72002230DF /* Build configuration list for PBXProject "NDAvatarExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				294E36FE1D5E0B72002230DF /* Debug */,
@@ -436,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "AvatarImageViewExample" */ = {
+		294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				294E37011D5E0B72002230DF /* Debug */,

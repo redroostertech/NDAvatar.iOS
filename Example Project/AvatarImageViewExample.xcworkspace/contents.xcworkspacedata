@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AvatarImageViewExample.xcodeproj">
+      location = "group:/Users/daveglassco/Developer/Neone.GitHub/NDAvatarImageView/Example Project/NDAvatarExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
