@@ -27,7 +27,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRoundness">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,19 +35,92 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-OK-Kf6">
+                                <rect key="frame" x="87.666666666666686" y="530" width="163.66666666666666" height="111"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfm-ur-C97">
+                                        <rect key="frame" x="34" y="0.0" width="96" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Show Initials"/>
+                                        <connections>
+                                            <action selector="setToTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWh-vk-AmM"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L2W-sx-StE" userLabel="RoundMaskGroup">
+                                        <rect key="frame" x="2" y="41" width="159.66666666666666" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YMm-fq-9tK">
+                                                <rect key="frame" x="110.33333333333331" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="maskSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="PQm-37-cLX"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle Mask" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDm-Jv-BI4">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MSN-Z1-FCR" userLabel="BorderGroup">
+                                        <rect key="frame" x="0.0" y="80" width="163.66666666666666" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9r-wR-kyP">
+                                                <rect key="frame" x="114.33333333333331" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="borderSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="ras-BN-vWd"/>
+                                                    <action selector="maskSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Ro-yz-zF9"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Border" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBM-Pr-2IE">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HOU-rA-DU0" userLabel="RoundCorners">
+                                        <rect key="frame" x="-0.66666666666668561" y="40" width="163.66666666666666" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-bX-7wq">
+                                                <rect key="frame" x="114" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="borderSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="e8N-tZ-20W"/>
+                                                    <action selector="maskSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="ojD-uO-LVQ"/>
+                                                    <action selector="roundCornersSwitchTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="lQ6-dp-dUO"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Corners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlQ-Pi-YXk">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dd-3u-tYw"/>
-                            <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JAv-UK-swx"/>
+                            <constraint firstItem="iKc-OK-Kf6" firstAttribute="top" secondItem="ZyS-ph-4sG" secondAttribute="bottom" constant="24" id="9dU-oy-8R0"/>
+                            <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2/3" id="JAv-UK-swx"/>
+                            <constraint firstItem="iKc-OK-Kf6" firstAttribute="centerX" secondItem="ZyS-ph-4sG" secondAttribute="centerX" id="oTg-n9-eAX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single Avatar" id="JdY-e2-ZXH"/>
                     <connections>
                         <outlet property="avatarView" destination="ZyS-ph-4sG" id="SvK-Yd-j20"/>
+                        <outlet property="roundCornersSwitch" destination="wpp-bX-7wq" id="sqY-bN-4du"/>
+                        <outlet property="roundMaskSwitch" destination="YMm-fq-9tK" id="aS3-FT-AMh"/>
+                        <outlet property="setToButton" destination="yfm-ur-C97" id="SCr-oU-ipX"/>
+                        <outlet property="showBorderSwitch" destination="I9r-wR-kyP" id="UtA-MZ-rHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

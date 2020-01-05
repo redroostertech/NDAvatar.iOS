@@ -14,7 +14,6 @@ public class AvatarViewController: UIView {
     @IBOutlet weak var avatarFrame: UIViewX!
     @IBOutlet public var avatarImageView: AvatarImageView!
     
-    
     @IBInspectable var isRound: Bool = false {
         didSet {
             if isRound == true {
@@ -22,23 +21,22 @@ public class AvatarViewController: UIView {
             } else {
                 setToDefault()
             }
-            
         }
     }
     
-    @IBInspectable var cornerRoundness: CGFloat = 0 {
+    @IBInspectable public var cornerRoundness: CGFloat = 0 {
         didSet {
             avatarFrame.cornerRadius = cornerRoundness
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             avatarFrame.borderWidth = borderWidth
         }
     }
     
-    @IBInspectable var borderColor: UIColor = UIColor.white {
+    @IBInspectable public var borderColor: UIColor = UIColor.white {
         didSet {
             avatarFrame.borderColor = borderColor
         }
@@ -74,18 +72,23 @@ public class AvatarViewController: UIView {
     
     }
     
-    fileprivate func setToRound() {
+    public func setToRound() {
         avatarFrame.cornerRadius = avatarView.frame.width/2
         configureRoundAvatar()
     }
     
-    fileprivate func setToDefault() {
+    public func setToDefault() {
         avatarFrame.cornerRadius = 0
-        cornerRoundness = 0
+        configureDefaultAvatar()
     }
     
     fileprivate func configureRoundAvatar() {
         struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
+        avatarImageView.configuration = Config()
+    }
+    
+    fileprivate func configureDefaultAvatar() {
+        struct Config: AvatarImageViewConfiguration { var shape: Shape = .square }
         avatarImageView.configuration = Config()
     }
 
