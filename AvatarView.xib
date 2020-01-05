@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,13 +23,50 @@
                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Od-To-aIm" userLabel="AvatarFrame" customClass="UIViewX" customModule="Neone_net" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7Od-To-aIm" secondAttribute="height" multiplier="1:1" id="CjM-7X-6gf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" name="GrayDarker"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadowShouldRasterize" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRasterizationScale">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="iGz-zv-Yu9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="7oj-9h-KQW"/>
-                <constraint firstItem="iGz-zv-Yu9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerXWithinMargins" id="Lzy-ce-N73"/>
-                <constraint firstItem="iGz-zv-Yu9" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="fHN-Su-vVk"/>
-                <constraint firstItem="iGz-zv-Yu9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerYWithinMargins" id="uZM-oM-BuA"/>
+                <constraint firstItem="7Od-To-aIm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="81D-KG-g6W"/>
+                <constraint firstItem="iGz-zv-Yu9" firstAttribute="width" secondItem="7Od-To-aIm" secondAttribute="width" id="Uxv-Ep-CTI"/>
+                <constraint firstItem="7Od-To-aIm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="W1Z-8u-h8e"/>
+                <constraint firstItem="iGz-zv-Yu9" firstAttribute="centerX" secondItem="7Od-To-aIm" secondAttribute="centerX" id="jNr-v2-sPe"/>
+                <constraint firstItem="iGz-zv-Yu9" firstAttribute="centerY" secondItem="7Od-To-aIm" secondAttribute="centerY" id="lhA-xI-sDd"/>
+                <constraint firstItem="7Od-To-aIm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ml8-fd-sgh"/>
+                <constraint firstItem="iGz-zv-Yu9" firstAttribute="height" secondItem="7Od-To-aIm" secondAttribute="height" id="xBK-el-OlZ"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -36,4 +74,9 @@
             <point key="canvasLocation" x="141" y="154"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="GrayDarker">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

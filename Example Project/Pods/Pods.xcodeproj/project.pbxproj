@@ -16,6 +16,7 @@
 		D707186771E29C33A667AFEF0B61497D /* AvatarImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67478BAE31B1264CACB635C6C7DA296A /* AvatarImageView-dummy.m */; };
 		D944599223C2292600C44F08 /* AvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D944599123C2292600C44F08 /* AvatarView.xib */; };
 		D944599423C22CBF00C44F08 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944599323C22CBF00C44F08 /* AvatarViewController.swift */; };
+		D944599623C2441000C44F08 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944599523C2441000C44F08 /* UIViewX.swift */; };
 		DB516D0FBA87E37BEBE134B7F49274AC /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85EA41C18CBFBED813ADD877CDE6772 /* AvatarImageView.swift */; };
 		DC263DAB0E6DEB99E7F5436E2B2A78F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		D2D7A13DC47443CB9092B70F1E50D3A8 /* Pods-AvatarImageViewExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvatarImageViewExample-resources.sh"; sourceTree = "<group>"; };
 		D944599123C2292600C44F08 /* AvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarView.xib; sourceTree = "<group>"; };
 		D944599323C22CBF00C44F08 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvatarViewController.swift; path = AvatarImageView/AvatarViewController.swift; sourceTree = "<group>"; };
+		D944599523C2441000C44F08 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		E85EA41C18CBFBED813ADD877CDE6772 /* AvatarImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageView.swift; path = AvatarImageView/AvatarImageView.swift; sourceTree = "<group>"; };
 		EA1BC0DACD893993FCDAD1F210EF6671 /* Pods-AvatarImageViewExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvatarImageViewExample-frameworks.sh"; sourceTree = "<group>"; };
 		EB31A9CE420045EC736BE013EC337E93 /* AvatarImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-prefix.pch"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E85EA41C18CBFBED813ADD877CDE6772 /* AvatarImageView.swift */,
 				274E45C979D47967E1381C2A9A3CEF7A /* AvatarImageViewConfiguration.swift */,
 				BB067C1FCF7633FB4E68CBABC01F08F2 /* ColorCache.swift */,
+				D944599523C2441000C44F08 /* UIViewX.swift */,
 				5AE1B5DF9F05DE6C9BCD36F7C4A7F739 /* Pod */,
 				67B74D31FE693E6E6675FD4F63AEDF79 /* Support Files */,
 			);
@@ -318,6 +321,7 @@
 				DB516D0FBA87E37BEBE134B7F49274AC /* AvatarImageView.swift in Sources */,
 				65DDE6CA8A89F8020BFC971A557E38E5 /* AvatarImageViewConfiguration.swift in Sources */,
 				0D52249EFEE2BFD3B9D984DFB9A39A9B /* ColorCache.swift in Sources */,
+				D944599623C2441000C44F08 /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,7 +452,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AvatarImageView/AvatarImageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AvatarImageView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 3.0;
 				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
@@ -516,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -576,7 +580,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AvatarImageView/AvatarImageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AvatarImageView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 3.0;
 				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
