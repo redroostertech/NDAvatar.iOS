@@ -41,6 +41,8 @@ open class AvatarImageView: UIImageView {
     open var configuration: AvatarImageViewConfiguration
         = DefaultConfiguration()
     
+
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -60,22 +62,33 @@ open class AvatarImageView: UIImageView {
         image = nil
     }
     
-    func textAttributesFrom(data: AvatarImageViewDataSource) -> [NSAttributedString.Key: Any] {
-        var attributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: configuration.textColor]
-        let fontSize = bounds.size.width * configuration.textSizeFactor
+    /// Redraws the image based on the current data source and configuration
+    public func refresh() {
+        guard let dataSource = dataSource else {
+            image = nil
+            return
+        }
         
-        if let fontName = configuration.fontName {
-            attributes[NSAttributedString.Key.font] = UIFont(name: fontName, size: fontSize)
+        if let avatar = dataSource.avatar {
+            image = avatar
+            switch configuration.shape {
+            case .circle:
+                layoutIfNeeded()
+                clipsToBounds = true
+                layer.cornerRadius = bounds.size.width/2
+                break
+            case .mask(let image):
+                mask(layer: layer, withImage: image)
+            default:
+                break
+            }
         }
         else {
-            attributes[NSAttributedString.Key.font] = UIFont.systemFont(ofSize: fontSize)
+            image = drawImageWith(data: dataSource)
         }
-        
-        let baselineOffset = fontSize * configuration.baselineOffsetFactor
-        attributes[NSAttributedString.Key.baselineOffset] = NSNumber(value: Double(baselineOffset))
-        
-        return attributes
+        setNeedsDisplay()
     }
+    
     
     func drawImageWith(data:AvatarImageViewDataSource) -> UIImage {
         let scale = UIScreen.main.scale
@@ -134,33 +147,25 @@ open class AvatarImageView: UIImageView {
         }
     }
     
-    /// Redraws the image based on the current data source and configuration
-    public func refresh() {
-        guard let dataSource = dataSource else {
-            image = nil
-            return
-        }
+    
+    func textAttributesFrom(data: AvatarImageViewDataSource) -> [NSAttributedString.Key: Any] {
+        var attributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: configuration.textColor]
+        let fontSize = bounds.size.width * configuration.textSizeFactor
         
-        if let avatar = dataSource.avatar {
-            image = avatar
-            switch configuration.shape {
-            case .circle:
-                layoutIfNeeded()
-                clipsToBounds = true
-                layer.cornerRadius = bounds.size.width/2
-                break
-            case .mask(let image):
-                mask(layer: layer, withImage: image)
-            default:
-                break
-            }
+        if let fontName = configuration.fontName {
+            attributes[NSAttributedString.Key.font] = UIFont(name: fontName, size: fontSize)
         }
         else {
-            image = drawImageWith(data: dataSource)
+            attributes[NSAttributedString.Key.font] = UIFont.systemFont(ofSize: fontSize)
         }
-        setNeedsDisplay()
+        
+        let baselineOffset = fontSize * configuration.baselineOffsetFactor
+        attributes[NSAttributedString.Key.baselineOffset] = NSNumber(value: Double(baselineOffset))
+        
+        return attributes
     }
-
+    
+   
 
     // MARK:- Utilities
     
