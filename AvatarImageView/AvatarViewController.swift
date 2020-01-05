@@ -10,6 +10,8 @@ import UIKit
 @IBDesignable
 public class AvatarViewController: UIView {
 
+    var currentCorner: CGFloat = 0
+    
     @IBOutlet weak var avatarView: UIView!
     @IBOutlet weak var avatarFrame: UIViewX!
     @IBOutlet public var avatarImageView: AvatarImageView!
@@ -73,12 +75,13 @@ public class AvatarViewController: UIView {
     }
     
     public func setToRound() {
+        currentCorner = avatarFrame.cornerRadius
         avatarFrame.cornerRadius = avatarView.frame.width/2
         configureRoundAvatar()
     }
     
     public func setToDefault() {
-        avatarFrame.cornerRadius = 0
+        avatarFrame.cornerRadius = currentCorner
         configureDefaultAvatar()
     }
     
