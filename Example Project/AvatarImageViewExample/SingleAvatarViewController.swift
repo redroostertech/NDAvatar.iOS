@@ -15,7 +15,7 @@ class SingleAvatarViewController: UIViewController {
     @IBOutlet var avatarImageView: AvatarImageView! {
         didSet {
             configureRoundAvatar() // Comment this line for a square avatar as that is the default.
-            showInitials()
+            showProfilePicture()
         }
     }
     

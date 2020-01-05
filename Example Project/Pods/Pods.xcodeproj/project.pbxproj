@@ -14,6 +14,7 @@
 		6026D150AFCBEB46138C71FF350039E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		65DDE6CA8A89F8020BFC971A557E38E5 /* AvatarImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E45C979D47967E1381C2A9A3CEF7A /* AvatarImageViewConfiguration.swift */; };
 		D707186771E29C33A667AFEF0B61497D /* AvatarImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67478BAE31B1264CACB635C6C7DA296A /* AvatarImageView-dummy.m */; };
+		D944599223C2292600C44F08 /* AvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D944599123C2292600C44F08 /* AvatarView.xib */; };
 		DB516D0FBA87E37BEBE134B7F49274AC /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85EA41C18CBFBED813ADD877CDE6772 /* AvatarImageView.swift */; };
 		DC263DAB0E6DEB99E7F5436E2B2A78F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		C6EBFFE840F5459FE28770560BC73834 /* AvatarImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AvatarImageView.modulemap; sourceTree = "<group>"; };
 		CB50D5A9F65811E636B2DD1BF8DA5967 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D7A13DC47443CB9092B70F1E50D3A8 /* Pods-AvatarImageViewExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvatarImageViewExample-resources.sh"; sourceTree = "<group>"; };
+		D944599123C2292600C44F08 /* AvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarView.xib; sourceTree = "<group>"; };
 		E85EA41C18CBFBED813ADD877CDE6772 /* AvatarImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarImageView.swift; path = AvatarImageView/AvatarImageView.swift; sourceTree = "<group>"; };
 		EA1BC0DACD893993FCDAD1F210EF6671 /* Pods-AvatarImageViewExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvatarImageViewExample-frameworks.sh"; sourceTree = "<group>"; };
 		EB31A9CE420045EC736BE013EC337E93 /* AvatarImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvatarImageView-prefix.pch"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				BB067C1FCF7633FB4E68CBABC01F08F2 /* ColorCache.swift */,
 				5AE1B5DF9F05DE6C9BCD36F7C4A7F739 /* Pod */,
 				67B74D31FE693E6E6675FD4F63AEDF79 /* Support Files */,
+				D944599123C2292600C44F08 /* AvatarView.xib */,
 			);
 			name = AvatarImageView;
 			path = ../..;
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D944599223C2292600C44F08 /* AvatarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
