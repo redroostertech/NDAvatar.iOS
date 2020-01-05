@@ -12,6 +12,10 @@ import AvatarImageView
 
 
 class SingleAvatarViewController: UIViewController {
+    
+    @IBOutlet var avatarView: AvatarViewController!
+    
+    
     @IBOutlet var avatarImageView: AvatarImageView! {
         didSet {
             configureRoundAvatar() // Comment this line for a square avatar as that is the default.
@@ -21,7 +25,9 @@ class SingleAvatarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        addViewProgramatically()
+        var data = ExampleData()
+        data.avatar = UIImage(named: "profile_pic")!
+        avatarView.avatarImageView?.dataSource = data
     }
     
     func addViewProgramatically() {
@@ -29,6 +35,7 @@ class SingleAvatarViewController: UIViewController {
         let avatarImageView = AvatarImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         avatarImageView.dataSource = DataSource()
         view.addSubview(avatarImageView)
+        
     }
     
     func configureRoundAvatar() {
@@ -54,6 +61,7 @@ class SingleAvatarViewController: UIViewController {
         var data = ExampleData()
         data.avatar = UIImage(named: "profile_pic")!
         avatarImageView.dataSource = data
+       
     }
     
     func showInitials() {

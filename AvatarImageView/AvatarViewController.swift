@@ -7,30 +7,43 @@
 
 import UIKit
 
-public class AvatarViewController: UIViewController {
+@IBDesignable
+public class AvatarViewController: UIView {
 
-    public init() {
-        super.init(nibName: "AvatarView", bundle: Bundle(for: AvatarViewController.self))
+    @IBOutlet weak var avatarView: UIView!
+    @IBOutlet public var avatarImageView: AvatarImageView!
+    
+//    var color: UIColor? {
+//        didSet {
+//            avatarView.backgroundColor = color
+//        }
+//    }
+    
+    //MARK: - Initializers and Overrides
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
     }
+    
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        commonInit()
     }
     
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    private func commonInit() {
+        if let bundle = Bundle(identifier: "com.neone.avatarview") {
+            bundle.loadNibNamed("AvatarView", owner: self, options: nil)
+            addSubview(avatarView)
+            avatarView.frame = self.bounds
+            avatarView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    public override func awakeFromNib() {
+    super.awakeFromNib()
+    
+     
     }
-    */
 
 }

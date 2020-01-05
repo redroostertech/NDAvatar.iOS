@@ -450,7 +450,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 3.0;
 				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.avatarview;
 				PRODUCT_MODULE_NAME = AvatarImageView;
 				PRODUCT_NAME = AvatarImageView;
 				SDKROOT = iphoneos;
@@ -576,7 +578,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 3.0;
 				MODULEMAP_FILE = "Target Support Files/AvatarImageView/AvatarImageView.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.avatarview;
 				PRODUCT_MODULE_NAME = AvatarImageView;
 				PRODUCT_NAME = AvatarImageView;
 				SDKROOT = iphoneos;
