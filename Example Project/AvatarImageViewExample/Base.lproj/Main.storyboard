@@ -27,8 +27,9 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="AvatarImageView">
-                                <rect key="frame" x="87.5" y="20" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="17.5" width="200" height="200"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
                                     <constraint firstAttribute="height" constant="200" id="gyh-xK-ee4"/>
                                 </constraints>
                             </view>
@@ -36,9 +37,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dd-3u-tYw"/>
-                            <constraint firstItem="ARg-Tg-Da4" firstAttribute="top" secondItem="ZyS-ph-4sG" secondAttribute="bottom" constant="13.5" id="MAF-hk-EP7"/>
+                            <constraint firstItem="ARg-Tg-Da4" firstAttribute="top" secondItem="ZyS-ph-4sG" secondAttribute="bottom" constant="16" id="MAF-hk-EP7"/>
                             <constraint firstItem="ARg-Tg-Da4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q2u-2u-tJb"/>
-                            <constraint firstItem="ZyS-ph-4sG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="zMl-4A-PlW"/>
                             <constraint firstItem="ARg-Tg-Da4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zba-Sa-5Mz"/>
                         </constraints>
                     </view>

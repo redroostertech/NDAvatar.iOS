@@ -26,8 +26,11 @@ class SingleAvatarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var data = ExampleData()
+        struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
+        avatarView.avatarImageView.configuration = Config()
         data.avatar = UIImage(named: "profile_pic")!
         avatarView.avatarImageView?.dataSource = data
+        
     }
     
     func addViewProgramatically() {
