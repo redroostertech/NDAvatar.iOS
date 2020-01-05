@@ -10,8 +10,9 @@ import UIKit
 import AvatarImageView
 
 
-
 class SingleAvatarViewController: UIViewController {
+    
+
     
     @IBOutlet var avatarView: AvatarViewController!
     
@@ -25,9 +26,11 @@ class SingleAvatarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         var data = ExampleData()
-        struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
-        avatarView.avatarImageView.configuration = Config()
+//        struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
+//        avatarView.avatarImageView.configuration = Config()
         data.avatar = UIImage(named: "profile_pic")!
         avatarView.avatarImageView?.dataSource = data
         
@@ -43,12 +46,12 @@ class SingleAvatarViewController: UIViewController {
     
     func configureRoundAvatar() {
         struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
-        avatarImageView.configuration = Config()
+        avatarView.avatarImageView.configuration = Config()
     }
     
     func configureHexagonAvatar() {
         struct Config: AvatarImageViewConfiguration { var shape: Shape = .mask(image: UIImage(named: "hexagon")!) }
-        avatarImageView.configuration = Config()
+        avatarView.avatarImageView.configuration = Config()
     }
     
     func configureRoundAvatarWithCustomFont() {
@@ -57,18 +60,18 @@ class SingleAvatarViewController: UIViewController {
             var fontName: String? = "Futura-Medium"
             
         }
-        avatarImageView.configuration = Config()
+        avatarView.avatarImageView.configuration = Config()
     }
     
     func showProfilePicture() {
         var data = ExampleData()
         data.avatar = UIImage(named: "profile_pic")!
-        avatarImageView.dataSource = data
+        avatarView.avatarImageView.dataSource = data
        
     }
     
     func showInitials() {
-        avatarImageView.dataSource = ExampleData()
+        avatarView.avatarImageView.dataSource = ExampleData()
     }
 }
 

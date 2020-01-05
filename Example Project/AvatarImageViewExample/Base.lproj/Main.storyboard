@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7ee-HK-d0P">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,35 +16,37 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARg-Tg-Da4" customClass="AvatarImageView" customModule="AvatarImageView">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="aOk-jU-b78"/>
-                                    <constraint firstAttribute="width" constant="200" id="bxG-zW-PEm"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="AvatarImageView">
-                                <rect key="frame" x="87.5" y="17.5" width="200" height="200"/>
+                                <rect key="frame" x="87.666666666666686" y="306" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
                                     <constraint firstAttribute="height" constant="200" id="gyh-xK-ee4"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRoundness">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dd-3u-tYw"/>
-                            <constraint firstItem="ARg-Tg-Da4" firstAttribute="top" secondItem="ZyS-ph-4sG" secondAttribute="bottom" constant="16" id="MAF-hk-EP7"/>
-                            <constraint firstItem="ARg-Tg-Da4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q2u-2u-tJb"/>
-                            <constraint firstItem="ARg-Tg-Da4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zba-Sa-5Mz"/>
+                            <constraint firstItem="ZyS-ph-4sG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JAv-UK-swx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single Avatar" id="JdY-e2-ZXH"/>
                     <connections>
-                        <outlet property="avatarImageView" destination="ARg-Tg-Da4" id="7Ll-bu-bgF"/>
                         <outlet property="avatarView" destination="ZyS-ph-4sG" id="SvK-Yd-j20"/>
                     </connections>
                 </viewController>
@@ -61,11 +63,11 @@
                         <viewControllerLayoutGuide type="bottom" id="jG8-kQ-FkI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MdG-YW-IBt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWn-Nk-6Eg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="avatarCell" rowHeight="119" id="gYN-1N-SyK" customClass="AvatarTableViewCell" customModule="NDAvatarExample" customModuleProvider="target">
@@ -76,7 +78,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12o-Ze-qdZ" customClass="AvatarImageView" customModule="AvatarImageView">
-                                                    <rect key="frame" x="8" y="7.5" width="104" height="104"/>
+                                                    <rect key="frame" x="8" y="7.6666666666666643" width="104" height="104"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="104" id="l4L-cQ-t0a"/>
                                                         <constraint firstAttribute="width" constant="104" id="ncx-UB-nNS"/>

@@ -11,13 +11,38 @@ import UIKit
 public class AvatarViewController: UIView {
 
     @IBOutlet weak var avatarView: UIView!
+    @IBOutlet weak var avatarFrame: UIViewX!
     @IBOutlet public var avatarImageView: AvatarImageView!
     
-//    var color: UIColor? {
-//        didSet {
-//            avatarView.backgroundColor = color
-//        }
-//    }
+    
+    @IBInspectable var isRound: Bool = false {
+        didSet {
+            if isRound == true {
+                setToRound()
+            } else {
+                setToDefault()
+            }
+            
+        }
+    }
+    
+    @IBInspectable var cornerRoundness: CGFloat = 0 {
+        didSet {
+            avatarFrame.cornerRadius = cornerRoundness
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            avatarFrame.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.white {
+        didSet {
+            avatarFrame.borderColor = borderColor
+        }
+    }
     
     //MARK: - Initializers and Overrides
     public override init(frame: CGRect) {
@@ -43,7 +68,25 @@ public class AvatarViewController: UIView {
     public override func awakeFromNib() {
     super.awakeFromNib()
     
-     
+        if isRound == true {
+            setToRound()
+        }
+    
+    }
+    
+    fileprivate func setToRound() {
+        avatarFrame.cornerRadius = avatarView.frame.width/2
+        configureRoundAvatar()
+    }
+    
+    fileprivate func setToDefault() {
+        avatarFrame.cornerRadius = 0
+        cornerRoundness = 0
+    }
+    
+    fileprivate func configureRoundAvatar() {
+        struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
+        avatarImageView.configuration = Config()
     }
 
 }

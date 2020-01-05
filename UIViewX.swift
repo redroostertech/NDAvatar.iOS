@@ -65,6 +65,17 @@ class UIViewX: UIView {
         }
     }
     
+    @IBInspectable
+    /// Corner radius of view; also inspectable from Storyboard.
+    var maskToBounds: Bool {
+        get {
+            return layer.masksToBounds
+        }
+        set {
+            layer.masksToBounds = newValue
+        }
+    }
+    
     func fadeTo(_ alpha: CGFloat, duration: TimeInterval? = 0.3) {
         DispatchQueue.main.async {
             UIView.animate(withDuration: duration != nil ? duration! : 0.3) {
