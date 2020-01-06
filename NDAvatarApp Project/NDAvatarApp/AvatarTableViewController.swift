@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AvatarImageView
+import NDAvatarView
 
 class AvatarTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     

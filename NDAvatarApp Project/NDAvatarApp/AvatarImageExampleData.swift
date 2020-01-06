@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import AvatarImageView
+import NDAvatarView
+import UIKit
 
 struct ExampleData: AvatarImageViewDataSource {
     var name: String

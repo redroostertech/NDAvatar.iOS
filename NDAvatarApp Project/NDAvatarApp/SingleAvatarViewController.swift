@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AvatarImageView
+import NDAvatarView
 
 
 class SingleAvatarViewController:
