@@ -172,7 +172,8 @@
 			children = (
 				D976791023C2A2F60012233C /* UIViewX.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = AvatarImageView/Extensions;
 			sourceTree = "<group>";
 		};
 		EEC902119805A1A0F2354B8B5476FD75 /* Targets Support Files */ = {
