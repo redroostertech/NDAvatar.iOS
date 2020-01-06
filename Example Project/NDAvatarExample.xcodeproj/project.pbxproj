@@ -16,6 +16,10 @@
 		294E370A1D5E0E9F002230DF /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */; };
 		294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */; };
 		C69EC3E25C768B100378D02A /* Pods_AvatarImageViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */; };
+		D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DB5D223C2C03500047286 /* UIViewX.swift */; };
+		D976790D23C2A23F0012233C /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D976790B23C2A23F0012233C /* colorPalette.plist */; };
+		D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976790C23C2A23F0012233C /* ColorPickerViewController.swift */; };
+		D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageExampleData.swift; sourceTree = "<group>"; };
 		7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91DB5D223C2C03500047286 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
+		D976790C23C2A23F0012233C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				294E36FD1D5E0B72002230DF /* Info.plist */,
 				294E370B1D5E0FEE002230DF /* Model */,
 				294E37051D5E0E5C002230DF /* View Controllers */,
+				D976790A23C2A23F0012233C /* Extras */,
 				294E37081D5E0E86002230DF /* Views */,
 				294E37061D5E0E68002230DF /* Storyboards */,
 				294E37071D5E0E7E002230DF /* Assets */,
@@ -137,6 +146,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D976790A23C2A23F0012233C /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				D976790B23C2A23F0012233C /* colorPalette.plist */,
+				D976790C23C2A23F0012233C /* ColorPickerViewController.swift */,
+				D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */,
+				D91DB5D223C2C03500047286 /* UIViewX.swift */,
+			);
+			name = Extras;
+			path = ../../AvatarImageView/Extras;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,7 +222,9 @@
 			files = (
 				294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */,
 				294E36F91D5E0B72002230DF /* Assets.xcassets in Resources */,
+				D976790D23C2A23F0012233C /* colorPalette.plist in Resources */,
 				294E36F71D5E0B72002230DF /* Main.storyboard in Resources */,
+				D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +284,10 @@
 			files = (
 				294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */,
 				294E37041D5E0D20002230DF /* AvatarTableViewController.swift in Sources */,
+				D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */,
 				294E36F41D5E0B72002230DF /* SingleAvatarViewController.swift in Sources */,
 				294E370A1D5E0E9F002230DF /* AvatarTableViewCell.swift in Sources */,
+				D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */,
 				294E36F21D5E0B72002230DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

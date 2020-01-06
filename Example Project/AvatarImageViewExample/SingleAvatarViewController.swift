@@ -10,7 +10,16 @@ import UIKit
 import AvatarImageView
 
 
-class SingleAvatarViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+class SingleAvatarViewController:
+            UIViewController,
+            UIPickerViewDelegate,
+            UIPickerViewDataSource,
+            UITextFieldDelegate,
+            UIPopoverPresentationControllerDelegate,
+            ColorPickerDelegate
+{
+    
+    
     
     var setToShowPic: Bool?
     var borderWidths = [Int](0...15)
@@ -19,10 +28,13 @@ class SingleAvatarViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     @IBOutlet var avatarView: AvatarViewController!
     
-    @IBOutlet weak var setToButton: UIButton!
+
+    @IBOutlet weak var showProfilePic: UISwitch!
     @IBOutlet weak var roundMaskSwitch: UISwitch!
     @IBOutlet weak var showBorderSwitch: UISwitch!
+    @IBOutlet weak var chooseBorderColor: UIButton!
     @IBOutlet weak var borderTextField: UITextField!
+    @IBOutlet weak var borderColorView: UIViewX!
     @IBOutlet weak var roundCornersSwitch: UISwitch!
     
     
@@ -35,18 +47,32 @@ class SingleAvatarViewController: UIViewController, UIPickerViewDelegate, UIPick
         createPickerView()
         dismissPickerView()
        
-}
+    }
+    
+    // Override the iPhone behavior that presents a popover as fullscreen
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        // Return no adaptive presentation style, use default presentation behaviour
+        return .none
+    }
     
     @IBAction func setToTapped(_ sender: Any) {
         if setToShowPic == true {
             setToShowPic = false
-            setToButton.setTitle("Show Profile Pic", for: .normal)
+            
             showInitials()
             
         } else {
             setToShowPic = true
-            setToButton.setTitle("Show Initials", for: .normal)
             showProfilePicture()
+        }
+    }
+    @IBAction func showProfilePicTapped(_ sender: Any) {
+        
+        if showProfilePic.isOn == true {
+            showProfilePicture()
+        } else {
+            showProfilePic.isOn = false
+            showInitials()
         }
     }
     
@@ -83,35 +109,23 @@ class SingleAvatarViewController: UIViewController, UIPickerViewDelegate, UIPick
         
     }
     
-    @IBAction func chooseBorderColorTapped(_ sender: Any) {
-        
-        let popoverVC = storyboard?.instantiateViewController(withIdentifier: "colorPickerPopover") as! ColorPickerViewController
+    @IBAction func chooseBorderColorTapped(_ sender: UIButton) {
+        let pickerStoryboard = UIStoryboard.init(name: "ColorPickerPopover", bundle: nil)
+        let popoverVC = pickerStoryboard.instantiateViewController(withIdentifier: "colorPickerPopover") as! ColorPickerViewController
         popoverVC.modalPresentationStyle = .popover
         popoverVC.preferredContentSize = CGSize(width: 284, height: 446)
         if let popoverController = popoverVC.popoverPresentationController {
             popoverController.sourceView = sender
             popoverController.sourceRect = CGRect(x: 0, y: 0, width: 85, height: 30)
             popoverController.permittedArrowDirections = .any
-            popoverController.delegate = self
-            popoverVC.delegate = self
+            popoverVC.colorPickerDelegate = self
+            popoverVC.dismiss(animated: true, completion: nil)
         }
         present(popoverVC, animated: true, completion: nil)
         
     }
     
-    
-    //    func addViewProgramatically() {
-//        struct DataSource: AvatarImageViewDataSource {}
-//        let avatarImageView = AvatarImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-//        avatarImageView.dataSource = DataSource()
-//        view.addSubview(avatarImageView)
-//
-//    }
-    
-//    func configureRoundAvatar() {
-//        struct Config: AvatarImageViewConfiguration { var shape: Shape = .circle }
-//        avatarView.avatarImageView.configuration = Config()
-//    }
+
     
     func configureHexagonAvatar() {
         struct Config: AvatarImageViewConfiguration { var shape: Shape = .mask(image: UIImage(named: "hexagon")!) }
@@ -136,6 +150,12 @@ class SingleAvatarViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     func showInitials() {
         avatarView.avatarImageView.dataSource = ExampleData()
+    }
+    
+    //ColorPickerDelegate
+    func colorSelected(color: UIColor) {
+        avatarView.borderColor = color
+        borderColorView.backgroundColor = color
     }
 }
 
@@ -183,7 +203,14 @@ extension SingleAvatarViewController {
     @objc func action() {
        view.endEditing(true)
     }
-
-    
-    
 }
+  
+
+
+    //    func addViewProgramatically() {
+//        struct DataSource: AvatarImageViewDataSource {}
+//        let avatarImageView = AvatarImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+//        avatarImageView.dataSource = DataSource()
+//        view.addSubview(avatarImageView)
+//
+//    }
