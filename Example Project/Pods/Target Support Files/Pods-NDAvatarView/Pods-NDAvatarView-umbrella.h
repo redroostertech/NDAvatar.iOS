@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AvatarImageViewExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AvatarImageViewExampleVersionString[];
+FOUNDATION_EXPORT double Pods_NDAvatarViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_NDAvatarViewVersionString[];
 
