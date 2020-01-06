@@ -36,10 +36,10 @@
 		294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageExampleData.swift; sourceTree = "<group>"; };
 		7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D91DB5D223C2C03500047286 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
-		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
-		D976790C23C2A23F0012233C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
-		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
+		D91DB5D223C2C03500047286 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = "../../Example Project/AvatarImageViewExample/UIViewX.swift"; sourceTree = "<group>"; };
+		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = colorPalette.plist; path = "../../Example Project/AvatarImageViewExample/ColorPicker/colorPalette.plist"; sourceTree = "<group>"; };
+		D976790C23C2A23F0012233C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerViewController.swift"; sourceTree = "<group>"; };
+		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerPopover.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
