@@ -14,13 +14,19 @@
 		294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E36FA1D5E0B72002230DF /* LaunchScreen.storyboard */; };
 		294E37041D5E0D20002230DF /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37031D5E0D20002230DF /* AvatarTableViewController.swift */; };
 		294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */; };
+		C69EC3E25C768B100378D02A /* Pods_AvatarImageViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */; };
+		D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DB5D223C2C03500047286 /* UIViewX.swift */; };
 		D91DB5D423C2DCCC00047286 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */; };
-		D9B14C9723C3CC190018619C /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B14C9623C3CC190018619C /* UIViewX.swift */; };
-		D9B14C9923C3CC280018619C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B14C9823C3CC280018619C /* ColorPickerViewController.swift */; };
+		D976790D23C2A23F0012233C /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D976790B23C2A23F0012233C /* colorPalette.plist */; };
+		D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976790C23C2A23F0012233C /* ColorPickerViewController.swift */; };
+		D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */; };
+		D99CE46C23C37421006F62CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46A23C37421006F62CA /* README.md */; };
+		D99CE46D23C37421006F62CA /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46B23C37421006F62CA /* LICENSE.md */; };
 		D9F9FC5323C3C46F005701E8 /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D9F9FC5223C3C46F005701E8 /* NDAvatarView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36F11D5E0B72002230DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAvatarViewController.swift; sourceTree = "<group>"; };
@@ -31,12 +37,14 @@
 		294E37031D5E0D20002230DF /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewController.swift; sourceTree = "<group>"; };
 		294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
 		294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageExampleData.swift; sourceTree = "<group>"; };
-		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = colorPalette.plist; path = ColorPicker/colorPalette.plist; sourceTree = "<group>"; };
-		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = ColorPicker/ColorPickerPopover.storyboard; sourceTree = "<group>"; };
-		D99CE46A23C37421006F62CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Docs/README.md; sourceTree = "<group>"; };
-		D99CE46B23C37421006F62CA /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../Docs/LICENSE.md; sourceTree = "<group>"; };
-		D9B14C9623C3CC190018619C /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = NDAvatarApp/UIViewX.swift; sourceTree = SOURCE_ROOT; };
-		D9B14C9823C3CC280018619C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = ColorPicker/ColorPickerViewController.swift; sourceTree = SOURCE_ROOT; };
+		7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91DB5D223C2C03500047286 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = "../../Example Project/AvatarImageViewExample/UIViewX.swift"; sourceTree = "<group>"; };
+		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = colorPalette.plist; path = "../../Example Project/AvatarImageViewExample/ColorPicker/colorPalette.plist"; sourceTree = "<group>"; };
+		D976790C23C2A23F0012233C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerViewController.swift"; sourceTree = "<group>"; };
+		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerPopover.storyboard"; sourceTree = "<group>"; };
+		D99CE46A23C37421006F62CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		D99CE46B23C37421006F62CA /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../../LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F9FC5323C3C46F005701E8 /* NDAvatarView in Frameworks */,
+				C69EC3E25C768B100378D02A /* Pods_AvatarImageViewExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +63,10 @@
 		294E36E51D5E0B72002230DF = {
 			isa = PBXGroup;
 			children = (
-				294E36F01D5E0B72002230DF /* NDAvatarApp */,
+				294E36F01D5E0B72002230DF /* AvatarImageViewExample */,
 				294E36EF1D5E0B72002230DF /* Products */,
+				D6BC5EFFD548CA219776AC39 /* Pods */,
+				9E3CD1F5CA063FA3A795F64F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +78,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		294E36F01D5E0B72002230DF /* NDAvatarApp */ = {
+		294E36F01D5E0B72002230DF /* AvatarImageViewExample */ = {
 			isa = PBXGroup;
 			children = (
 				294E36F11D5E0B72002230DF /* AppDelegate.swift */,
@@ -81,7 +92,7 @@
 				294E37061D5E0E68002230DF /* Storyboards */,
 				294E37071D5E0E7E002230DF /* Assets */,
 			);
-			path = NDAvatarApp;
+			path = AvatarImageViewExample;
 			sourceTree = "<group>";
 		};
 		294E37051D5E0E5C002230DF /* View Controllers */ = {
@@ -126,13 +137,30 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		9E3CD1F5CA063FA3A795F64F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6BC5EFFD548CA219776AC39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */,
+				7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D976790A23C2A23F0012233C /* Extras */ = {
 			isa = PBXGroup;
 			children = (
 				D976790B23C2A23F0012233C /* colorPalette.plist */,
-				D9B14C9823C3CC280018619C /* ColorPickerViewController.swift */,
+				D976790C23C2A23F0012233C /* ColorPickerViewController.swift */,
 				D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */,
-				D9B14C9623C3CC190018619C /* UIViewX.swift */,
+				D91DB5D223C2C03500047286 /* UIViewX.swift */,
 			);
 			name = Extras;
 			path = ../../AvatarImageView/Extras;
@@ -145,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarView" */;
 			buildPhases = (
+				0FE37A1BF924A7E879E184F4 /* [CP] Check Pods Manifest.lock */,
 				294E36EA1D5E0B72002230DF /* Sources */,
 				294E36EB1D5E0B72002230DF /* Frameworks */,
 				294E36EC1D5E0B72002230DF /* Resources */,
+				1B69BD6FCCA2CD104FEDFF1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,13 +234,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99CE46C23C37421006F62CA /* README.md in Resources */,
 				294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */,
 				294E36F91D5E0B72002230DF /* Assets.xcassets in Resources */,
+				D976790D23C2A23F0012233C /* colorPalette.plist in Resources */,
 				294E36F71D5E0B72002230DF /* Main.storyboard in Resources */,
+				D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */,
+				D99CE46D23C37421006F62CA /* LICENSE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FE37A1BF924A7E879E184F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvatarImageViewExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B69BD6FCCA2CD104FEDFF1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AvatarImageView/AvatarImageView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvatarImageView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		294E36EA1D5E0B72002230DF /* Sources */ = {
@@ -219,11 +300,11 @@
 			files = (
 				294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */,
 				294E37041D5E0D20002230DF /* AvatarTableViewController.swift in Sources */,
+				D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */,
 				294E36F41D5E0B72002230DF /* SingleAvatarViewController.swift in Sources */,
-				D9B14C9923C3CC280018619C /* ColorPickerViewController.swift in Sources */,
+				D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */,
 				294E36F21D5E0B72002230DF /* AppDelegate.swift in Sources */,
 				D91DB5D423C2DCCC00047286 /* AvatarTableViewCell.swift in Sources */,
-				D9B14C9723C3CC190018619C /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,18 +441,18 @@
 		};
 		294E37011D5E0B72002230DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
+				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
-				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Extension";
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
 			};
@@ -379,18 +460,18 @@
 		};
 		294E37021D5E0B72002230DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
-				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
+				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
-				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Extension";
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
 			};
