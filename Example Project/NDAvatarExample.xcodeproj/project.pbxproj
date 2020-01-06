@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
-		294E36EE1D5E0B72002230DF /* NDAvatarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36F11D5E0B72002230DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAvatarViewController.swift; sourceTree = "<group>"; };
 		294E36F61D5E0B72002230DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		294E36EF1D5E0B72002230DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				294E36EE1D5E0B72002230DF /* NDAvatarExample.app */,
+				294E36EE1D5E0B72002230DF /* NDAvatarView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		294E36ED1D5E0B72002230DF /* NDAvatarExample */ = {
+		294E36ED1D5E0B72002230DF /* NDAvatarView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarExample" */;
+			buildConfigurationList = 294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarView" */;
 			buildPhases = (
 				0FE37A1BF924A7E879E184F4 /* [CP] Check Pods Manifest.lock */,
 				294E36EA1D5E0B72002230DF /* Sources */,
@@ -181,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = NDAvatarExample;
+			name = NDAvatarView;
 			productName = AvatarImageViewExample;
-			productReference = 294E36EE1D5E0B72002230DF /* NDAvatarExample.app */;
+			productReference = 294E36EE1D5E0B72002230DF /* NDAvatarView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				294E36ED1D5E0B72002230DF /* NDAvatarExample */,
+				294E36ED1D5E0B72002230DF /* NDAvatarView */,
 			);
 		};
 /* End PBXProject section */
@@ -440,8 +440,8 @@
 				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarExample;
-				PRODUCT_NAME = NDAvatarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
+				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -456,8 +456,8 @@
 				INFOPLIST_FILE = AvatarImageViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarExample;
-				PRODUCT_NAME = NDAvatarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
+				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -474,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarExample" */ = {
+		294E37001D5E0B72002230DF /* Build configuration list for PBXNativeTarget "NDAvatarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				294E37011D5E0B72002230DF /* Debug */,
