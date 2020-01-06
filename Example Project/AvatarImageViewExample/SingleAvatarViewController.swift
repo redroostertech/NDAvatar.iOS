@@ -150,7 +150,7 @@ class SingleAvatarViewController:
     }
     
     func showInitials() {
-        var data = NeoneData()
+        let data = NeoneData()
         avatarView.avatarImageView.dataSource = data
         borderColorView.backgroundColor = UIColor.white
     }
