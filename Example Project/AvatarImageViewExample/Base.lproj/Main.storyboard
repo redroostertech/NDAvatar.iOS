@@ -237,7 +237,9 @@
                             <constraint firstItem="iKc-OK-Kf6" firstAttribute="centerX" secondItem="ZyS-ph-4sG" secondAttribute="centerX" id="oTg-n9-eAX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Single Avatar" id="JdY-e2-ZXH"/>
+                    <tabBarItem key="tabBarItem" title="Single Avatar" image="person.circle" catalog="system" selectedImage="person.circle" id="JdY-e2-ZXH">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="avatarView" destination="ZyS-ph-4sG" id="SvK-Yd-j20"/>
                         <outlet property="borderColorStack" destination="tGI-a4-Ygb" id="PKa-78-Oxk"/>
@@ -270,7 +272,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWn-Nk-6Eg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="avatarCell" rowHeight="119" id="gYN-1N-SyK" customClass="AvatarTableViewCell" customModule="NDAvatarExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="119"/>
@@ -304,7 +306,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UWn-Nk-6Eg" firstAttribute="leading" secondItem="MdG-YW-IBt" secondAttribute="leading" id="0hc-EA-zwL"/>
                             <constraint firstItem="UWn-Nk-6Eg" firstAttribute="top" secondItem="MdG-YW-IBt" secondAttribute="top" id="An0-aZ-gTb"/>
@@ -312,7 +314,9 @@
                             <constraint firstItem="jG8-kQ-FkI" firstAttribute="top" secondItem="UWn-Nk-6Eg" secondAttribute="bottom" id="skg-Yr-5vF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Avatar Table" id="31P-wT-HHz"/>
+                    <tabBarItem key="tabBarItem" title="Avatar Table" image="person.3.fill" catalog="system" selectedImage="person.3.fill" id="31P-wT-HHz">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="UWn-Nk-6Eg" id="BMG-2L-sHH"/>
                     </connections>
@@ -341,4 +345,9 @@
             <point key="canvasLocation" x="565" y="393"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.3.fill" catalog="system" width="71" height="34"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="person.circle" width="16" height="16"/>
+    </resources>
 </document>
