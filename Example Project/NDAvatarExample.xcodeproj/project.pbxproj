@@ -16,11 +16,7 @@
 		294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */; };
 		D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DB5D223C2C03500047286 /* UIViewX.swift */; };
 		D91DB5D423C2DCCC00047286 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */; };
-		D976790D23C2A23F0012233C /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D976790B23C2A23F0012233C /* colorPalette.plist */; };
 		D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976790C23C2A23F0012233C /* ColorPickerViewController.swift */; };
-		D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */; };
-		D99CE46C23C37421006F62CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46A23C37421006F62CA /* README.md */; };
-		D99CE46D23C37421006F62CA /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46B23C37421006F62CA /* LICENSE.md */; };
 		D9F9FC5323C3C46F005701E8 /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D9F9FC5223C3C46F005701E8 /* NDAvatarView */; };
 /* End PBXBuildFile section */
 
@@ -208,13 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99CE46C23C37421006F62CA /* README.md in Resources */,
 				294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */,
 				294E36F91D5E0B72002230DF /* Assets.xcassets in Resources */,
-				D976790D23C2A23F0012233C /* colorPalette.plist in Resources */,
 				294E36F71D5E0B72002230DF /* Main.storyboard in Resources */,
-				D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */,
-				D99CE46D23C37421006F62CA /* LICENSE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
