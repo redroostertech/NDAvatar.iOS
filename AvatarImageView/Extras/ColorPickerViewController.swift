@@ -101,7 +101,7 @@ class ColorPickerViewController: UIViewController, UICollectionViewDelegate, UIC
             let cell: UICollectionViewCell  = collectionView.cellForItem(at: indexPath)! as UICollectionViewCell
             let hexString = colorPalette[cell.tag]
 			color = hexStringToUIColor(hexString)
-			self.view.backgroundColor = color
+//			self.view.backgroundColor = color
             colorPickerDelegate?.colorSelected(color: color)
             self.dismiss(animated: true, completion: nil)
 		}

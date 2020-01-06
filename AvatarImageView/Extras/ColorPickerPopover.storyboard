@@ -11,7 +11,7 @@
         <!--colorPickerPopover-->
         <scene sceneID="pqo-Yg-Trw">
             <objects>
-                <viewController storyboardIdentifier="colorPickerPopover" title="colorPickerPopover" id="eyo-7L-Aeg" customClass="ColorPickerViewController" customModule="NDAvatarExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="colorPickerPopover" title="colorPickerPopover" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="eyo-7L-Aeg" customClass="ColorPickerViewController" customModule="NDAvatarExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTd-oh-I27"/>
                         <viewControllerLayoutGuide type="bottom" id="h3G-Sk-Knn"/>
@@ -20,8 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-6s-cVf">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.81961686643835618" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="palette" translatesAutoresizingMaskIntoConstraints="NO" id="HoF-tt-W2a">
-                                <rect key="frame" x="0.0" y="44" width="268" height="430"/>
+                                <rect key="frame" x="73" y="238" width="268" height="430"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="430" id="2RW-KR-3hz"/>
                                     <constraint firstAttribute="width" constant="268" id="Y1J-Fs-tYW"/>
@@ -29,7 +33,7 @@
                                 <viewLayoutGuide key="safeArea" id="qPY-Cc-KYF"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MG3-jP-unl">
-                                <rect key="frame" x="0.0" y="44" width="268" height="430"/>
+                                <rect key="frame" x="73" y="238" width="268" height="430"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="268" id="Vg7-Ng-VSQ"/>
@@ -1328,13 +1332,24 @@
                                     <outlet property="delegate" destination="eyo-7L-Aeg" id="veA-Lm-Ftb"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap a color to select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1Y-kF-rPc">
+                                <rect key="frame" x="130" y="196" width="154.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DUa-6s-cVf" firstAttribute="top" secondItem="VMp-xT-Nc5" secondAttribute="topMargin" constant="384" id="Ea8-Ne-nsY"/>
                             <constraint firstItem="MG3-jP-unl" firstAttribute="leading" secondItem="HoF-tt-W2a" secondAttribute="leading" id="GHQ-3d-dnH"/>
-                            <constraint firstItem="k32-XG-cKp" firstAttribute="top" secondItem="HoF-tt-W2a" secondAttribute="top" id="KXL-DC-1xH"/>
+                            <constraint firstItem="HoF-tt-W2a" firstAttribute="centerY" secondItem="k32-XG-cKp" secondAttribute="centerY" id="KFd-UU-RkI"/>
+                            <constraint firstItem="DUa-6s-cVf" firstAttribute="leading" secondItem="VMp-xT-Nc5" secondAttribute="leadingMargin" constant="67" id="T0B-fE-bm4"/>
                             <constraint firstItem="MG3-jP-unl" firstAttribute="top" secondItem="HoF-tt-W2a" secondAttribute="top" id="ZWu-DV-Juw"/>
-                            <constraint firstItem="HoF-tt-W2a" firstAttribute="leading" secondItem="k32-XG-cKp" secondAttribute="leading" id="ll7-If-5ri"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DUa-6s-cVf" secondAttribute="bottom" constant="384" id="cus-jz-Zmd"/>
+                            <constraint firstItem="HoF-tt-W2a" firstAttribute="centerX" secondItem="k32-XG-cKp" secondAttribute="centerX" id="eLL-qD-faz"/>
+                            <constraint firstItem="HoF-tt-W2a" firstAttribute="top" secondItem="M1Y-kF-rPc" secondAttribute="bottom" constant="21" id="lLF-lc-W39"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DUa-6s-cVf" secondAttribute="trailing" constant="67" id="n96-S6-rgT"/>
+                            <constraint firstItem="M1Y-kF-rPc" firstAttribute="centerX" secondItem="HoF-tt-W2a" secondAttribute="centerX" id="uBd-gX-GGF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k32-XG-cKp"/>
                     </view>

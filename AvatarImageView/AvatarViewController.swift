@@ -94,5 +94,4 @@ public class AvatarViewController: UIView {
         struct Config: AvatarImageViewConfiguration { var shape: Shape = .square }
         avatarImageView.configuration = Config()
     }
-
 }
