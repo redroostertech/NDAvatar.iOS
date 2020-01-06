@@ -1,4 +1,5 @@
-Copyright (c) 2015 Ayush Newatia <ayush.newatia@icloud.com>
+Copyright (c) 2020 Neone Inc 
+neone.dev@neone.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

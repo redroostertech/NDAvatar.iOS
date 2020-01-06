@@ -1,13 +1,8 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Pod Version](https://cocoapod-badges.herokuapp.com/v/AvatarImageView/badge.png)](https://cocoapods.org/pods/AvatarImageView)
 [![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
-[![Twitter](https://img.shields.io/badge/Twitter-@AyushN21-blue.svg)](https://twitter.com/ayushn21)
 
-🚨🚨 THIS LIBRARY IS NO LONGER BEING MAINTAINED 🚨🚨
 
-I have run out of patience with Swift to stabilise and I can't be bothered to keep updating this every year becuase the language keeps breaking. Also I've decided to stop updating my laptop's OS (currently on Sierra) becuase I fear Apple will brick it and I'll be force to get one of those awful touchbar Macs; so that means I can't download the latest Xcode anyway.
-
-If you have a fork that you are happy to keep up to date, please email me and I will add a link to your repo in this Readme. Or feel free to open a PR adding the link.
+NDAvatarView is a framework for displaying profile pictures or user initials in a consistent way. 
 
 #### Build Status
 
@@ -18,9 +13,13 @@ If you have a fork that you are happy to keep up to date, please email me and I 
 
 ## Description
 
+`NDAvatarView` is a framework combining an instance of `AvatarImageView` with custom UI options for more flexibiity.
+
+
 `AvatarImageView` is a customisable subclass of UIImageView that is designed to show users' profile pictures. It falls back to the user's initials with a random background color if no profile picture is supplied.
 
-This library was inspired by and is supposed to be a Swift rewrite of [bachonk/UIImageView-Letters](https://github.com/bachonk/UIImageView-Letters). 
+`UIViewX` is a UiView extension allowing IBDesigable options for border width, border color, corner radius, and other customizations.
+
 
 ## Usage
 
@@ -96,35 +95,12 @@ struct Config: AvatarImageViewConfiguration {
 
 ## Documentation
 
-[Docs are available on CocoaDocs](http://cocoadocs.org/docsets/AvatarImageView/)
 
 ## Requirements
 
-AvatarImageView requires at least iOS 8.
+AvatarImageView requires at least iOS 12.
 
 ## Installation
-
-AvatarImageView is available through [CocoaPods](http://cocoapods.org). To install
-it, add the following lines to your Podfile:
-
-```ruby
-use_frameworks!
-
-# Swift 2.2
-pod "AvatarImageView", '1.1.1'
-
-# Swift 2.3
-pod "AvatarImageView", '~> 1.2.1'
-
-# Swift 3.0
-pod "AvatarImageView", '2.0.0'
-
-# Swift 4.0
-pod "AvatarImageView", '~> 2.1.0'
-
-# Swift 4.2
-pod "AvatarImageView", '~> 2.2.0'
-```
 
 ## Release Notes
 
@@ -164,10 +140,12 @@ Improved the random color generator. It now generates a hash from the initials a
 #### 1.0.0
 Initial Release
 
-## Author
+## Authors
 
+Dave Glassco, [dave@neone.com](mailto:dave@neone.com)
 Ayush Newatia, [ayush.newatia@icloud.com](mailto:ayush.newatia@icloud.com)
+Mark Moeykens, [Big Mountain Studio](https://www.bigmountainstudio.com)
 
 ## License
 
-AvatarImageView is available under the MIT license. See the LICENSE.md file for more info.
+NDAvatarView is available under the MIT license. See the LICENSE.md file for more info.
