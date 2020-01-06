@@ -8,43 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		294E36F21D5E0B72002230DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E36F11D5E0B72002230DF /* AppDelegate.swift */; };
-		294E36F41D5E0B72002230DF /* SingleAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */; };
-		294E36F71D5E0B72002230DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E36F51D5E0B72002230DF /* Main.storyboard */; };
 		294E36F91D5E0B72002230DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294E36F81D5E0B72002230DF /* Assets.xcassets */; };
-		294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E36FA1D5E0B72002230DF /* LaunchScreen.storyboard */; };
-		294E37041D5E0D20002230DF /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37031D5E0D20002230DF /* AvatarTableViewController.swift */; };
-		294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */; };
 		C69EC3E25C768B100378D02A /* Pods_AvatarImageViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */; };
-		D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DB5D223C2C03500047286 /* UIViewX.swift */; };
-		D91DB5D423C2DCCC00047286 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */; };
-		D976790D23C2A23F0012233C /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D976790B23C2A23F0012233C /* colorPalette.plist */; };
-		D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976790C23C2A23F0012233C /* ColorPickerViewController.swift */; };
-		D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */; };
-		D99CE46C23C37421006F62CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46A23C37421006F62CA /* README.md */; };
-		D99CE46D23C37421006F62CA /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D99CE46B23C37421006F62CA /* LICENSE.md */; };
+		D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195923C3EB7800EDC5E0 /* Main.storyboard */; };
+		D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */; };
+		D9C0196023C3EB9D00EDC5E0 /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195D23C3EB9D00EDC5E0 /* colorPalette.plist */; };
+		D9C0196123C3EB9D00EDC5E0 /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195E23C3EB9D00EDC5E0 /* ColorPickerPopover.storyboard */; };
+		D9C0196223C3EB9D00EDC5E0 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0195F23C3EB9D00EDC5E0 /* ColorPickerViewController.swift */; };
+		D9C0196423C3EBAF00EDC5E0 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196323C3EBAF00EDC5E0 /* UIViewX.swift */; };
+		D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */; };
+		D9C0196823C3EBC700EDC5E0 /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */; };
+		D9C0196A23C3EBD400EDC5E0 /* SingleAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */; };
+		D9C0196C23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */; };
+		D9C0196F23C3EBED00EDC5E0 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */; };
+		D9C0197023C3EBED00EDC5E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196E23C3EBED00EDC5E0 /* README.md */; };
 		D9F9FC5323C3C46F005701E8 /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D9F9FC5223C3C46F005701E8 /* NDAvatarView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14455938D2DEC298B13A6960 /* Pods-AvatarImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E36F11D5E0B72002230DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAvatarViewController.swift; sourceTree = "<group>"; };
-		294E36F61D5E0B72002230DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		294E36F11D5E0B72002230DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = NDAvatarApp/AppDelegate.swift; sourceTree = "<group>"; };
 		294E36F81D5E0B72002230DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		294E36FB1D5E0B72002230DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		294E37031D5E0D20002230DF /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewController.swift; sourceTree = "<group>"; };
-		294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
-		294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageExampleData.swift; sourceTree = "<group>"; };
+		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = NDAvatarApp/Info.plist; sourceTree = "<group>"; };
 		7847EE0537700DCE670B67B2 /* Pods-AvatarImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarImageViewExample/Pods-AvatarImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		97298AEA99237260964906B5 /* Pods_AvatarImageViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarImageViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D91DB5D223C2C03500047286 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = "../../Example Project/AvatarImageViewExample/UIViewX.swift"; sourceTree = "<group>"; };
-		D976790B23C2A23F0012233C /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = colorPalette.plist; path = "../../Example Project/AvatarImageViewExample/ColorPicker/colorPalette.plist"; sourceTree = "<group>"; };
-		D976790C23C2A23F0012233C /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerViewController.swift"; sourceTree = "<group>"; };
-		D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = "../../Example Project/AvatarImageViewExample/ColorPicker/ColorPickerPopover.storyboard"; sourceTree = "<group>"; };
-		D99CE46A23C37421006F62CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		D99CE46B23C37421006F62CA /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../../LICENSE.md; sourceTree = "<group>"; };
+		D9C0195923C3EB7800EDC5E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		D9C0195D23C3EB9D00EDC5E0 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = colorPalette.plist; path = "../../NDAvatarImageView/NDAvatarApp Project/ColorPicker/colorPalette.plist"; sourceTree = "<group>"; };
+		D9C0195E23C3EB9D00EDC5E0 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = "../../NDAvatarImageView/NDAvatarApp Project/ColorPicker/ColorPickerPopover.storyboard"; sourceTree = "<group>"; };
+		D9C0195F23C3EB9D00EDC5E0 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = "../../NDAvatarImageView/NDAvatarApp Project/ColorPicker/ColorPickerViewController.swift"; sourceTree = "<group>"; };
+		D9C0196323C3EBAF00EDC5E0 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = "../../NDAvatarImageView/NDAvatarApp Project/NDAvatarApp/UIViewX.swift"; sourceTree = "<group>"; };
+		D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarTableViewCell.swift; path = NDAvatarApp/AvatarTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarTableViewController.swift; path = NDAvatarApp/AvatarTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleAvatarViewController.swift; path = NDAvatarApp/SingleAvatarViewController.swift; sourceTree = SOURCE_ROOT; };
+		D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarImageExampleData.swift; path = NDAvatarApp/AvatarImageExampleData.swift; sourceTree = SOURCE_ROOT; };
+		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = Docs/LICENSE.md; sourceTree = SOURCE_ROOT; };
+		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Docs/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			children = (
 				294E36F11D5E0B72002230DF /* AppDelegate.swift */,
 				294E36FD1D5E0B72002230DF /* Info.plist */,
-				D99CE46B23C37421006F62CA /* LICENSE.md */,
-				D99CE46A23C37421006F62CA /* README.md */,
+				D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */,
+				D9C0196E23C3EBED00EDC5E0 /* README.md */,
 				294E370B1D5E0FEE002230DF /* Model */,
 				294E37051D5E0E5C002230DF /* View Controllers */,
 				294E37081D5E0E86002230DF /* Views */,
@@ -98,8 +98,8 @@
 		294E37051D5E0E5C002230DF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				294E36F31D5E0B72002230DF /* SingleAvatarViewController.swift */,
-				294E37031D5E0D20002230DF /* AvatarTableViewController.swift */,
+				D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */,
+				D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -107,8 +107,8 @@
 		294E37061D5E0E68002230DF /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				294E36FA1D5E0B72002230DF /* LaunchScreen.storyboard */,
-				294E36F51D5E0B72002230DF /* Main.storyboard */,
+				D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */,
+				D9C0195923C3EB7800EDC5E0 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 		294E37081D5E0E86002230DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				294E37091D5E0E9F002230DF /* AvatarTableViewCell.swift */,
+				D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 		294E370B1D5E0FEE002230DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				294E370C1D5E100E002230DF /* AvatarImageExampleData.swift */,
+				D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -157,10 +157,10 @@
 		D976790A23C2A23F0012233C /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				D976790B23C2A23F0012233C /* colorPalette.plist */,
-				D976790C23C2A23F0012233C /* ColorPickerViewController.swift */,
-				D976791A23C2A6750012233C /* ColorPickerPopover.storyboard */,
-				D91DB5D223C2C03500047286 /* UIViewX.swift */,
+				D9C0195D23C3EB9D00EDC5E0 /* colorPalette.plist */,
+				D9C0195E23C3EB9D00EDC5E0 /* ColorPickerPopover.storyboard */,
+				D9C0195F23C3EB9D00EDC5E0 /* ColorPickerViewController.swift */,
+				D9C0196323C3EBAF00EDC5E0 /* UIViewX.swift */,
 			);
 			name = Extras;
 			path = ../../AvatarImageView/Extras;
@@ -234,13 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99CE46C23C37421006F62CA /* README.md in Resources */,
-				294E36FC1D5E0B72002230DF /* LaunchScreen.storyboard in Resources */,
 				294E36F91D5E0B72002230DF /* Assets.xcassets in Resources */,
-				D976790D23C2A23F0012233C /* colorPalette.plist in Resources */,
-				294E36F71D5E0B72002230DF /* Main.storyboard in Resources */,
-				D976791B23C2AD010012233C /* ColorPickerPopover.storyboard in Resources */,
-				D99CE46D23C37421006F62CA /* LICENSE.md in Resources */,
+				D9C0196123C3EB9D00EDC5E0 /* ColorPickerPopover.storyboard in Resources */,
+				D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */,
+				D9C0197023C3EBED00EDC5E0 /* README.md in Resources */,
+				D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */,
+				D9C0196F23C3EBED00EDC5E0 /* LICENSE.md in Resources */,
+				D9C0196023C3EB9D00EDC5E0 /* colorPalette.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,36 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294E370D1D5E100E002230DF /* AvatarImageExampleData.swift in Sources */,
-				294E37041D5E0D20002230DF /* AvatarTableViewController.swift in Sources */,
-				D976791423C2A3F90012233C /* ColorPickerViewController.swift in Sources */,
-				294E36F41D5E0B72002230DF /* SingleAvatarViewController.swift in Sources */,
-				D91DB5D323C2C03500047286 /* UIViewX.swift in Sources */,
+				D9C0196823C3EBC700EDC5E0 /* AvatarTableViewController.swift in Sources */,
+				D9C0196223C3EB9D00EDC5E0 /* ColorPickerViewController.swift in Sources */,
+				D9C0196A23C3EBD400EDC5E0 /* SingleAvatarViewController.swift in Sources */,
+				D9C0196C23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift in Sources */,
 				294E36F21D5E0B72002230DF /* AppDelegate.swift in Sources */,
-				D91DB5D423C2DCCC00047286 /* AvatarTableViewCell.swift in Sources */,
+				D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */,
+				D9C0196423C3EBAF00EDC5E0 /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		294E36F51D5E0B72002230DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				294E36F61D5E0B72002230DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		294E36FA1D5E0B72002230DF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				294E36FB1D5E0B72002230DF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		294E36FE1D5E0B72002230DF /* Debug */ = {
