@@ -13,10 +13,12 @@ struct TableAvatarImageConfig: AvatarImageViewConfiguration {
     let shape: Shape = .circle
 }
 
-class AvatarTableViewCell: UITableViewCell {
-    @IBOutlet var avatarImageView: AvatarImageView! {
+class AvatarTableViewCell: UITableViewCell {    
+    
+    @IBOutlet weak var avatarView: AvatarViewController! {
         didSet {
-            avatarImageView.configuration = TableAvatarImageConfig()
+            avatarView.avatarImageView.configuration = TableAvatarImageConfig()
         }
     }
+    
 }

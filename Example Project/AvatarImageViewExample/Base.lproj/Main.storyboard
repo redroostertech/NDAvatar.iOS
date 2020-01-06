@@ -279,21 +279,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12o-Ze-qdZ" customClass="AvatarImageView" customModule="AvatarImageView">
-                                                    <rect key="frame" x="8" y="7.5" width="104" height="104"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-sK-2tr" customClass="AvatarViewController" customModule="AvatarImageView">
+                                                    <rect key="frame" x="16" y="7.5" width="104" height="104"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="104" id="l4L-cQ-t0a"/>
-                                                        <constraint firstAttribute="width" constant="104" id="ncx-UB-nNS"/>
+                                                        <constraint firstAttribute="height" constant="104" id="hpM-oW-SFv"/>
+                                                        <constraint firstAttribute="width" secondItem="ZTv-sK-2tr" secondAttribute="height" multiplier="1:1" id="xcR-1a-s9A"/>
                                                     </constraints>
-                                                </imageView>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="12o-Ze-qdZ" firstAttribute="centerY" secondItem="5ZA-ht-yMe" secondAttribute="centerY" id="chE-NQ-UBE"/>
-                                                <constraint firstItem="12o-Ze-qdZ" firstAttribute="leading" secondItem="5ZA-ht-yMe" secondAttribute="leading" constant="8" id="sZg-aX-lQg"/>
+                                                <constraint firstItem="ZTv-sK-2tr" firstAttribute="leading" secondItem="5ZA-ht-yMe" secondAttribute="leading" constant="16" id="28q-A8-vSb"/>
+                                                <constraint firstItem="ZTv-sK-2tr" firstAttribute="centerY" secondItem="5ZA-ht-yMe" secondAttribute="centerY" id="tlM-Mx-fFW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="avatarImageView" destination="12o-Ze-qdZ" id="XIb-io-ZMW"/>
+                                            <outlet property="avatarView" destination="ZTv-sK-2tr" id="GMM-lS-a1l"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

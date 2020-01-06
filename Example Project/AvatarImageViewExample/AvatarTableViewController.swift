@@ -35,7 +35,7 @@ class AvatarTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cells.AvatarCell) as! AvatarTableViewCell
-        cell.avatarImageView.dataSource = data[indexPath.row]
+        cell.avatarView.avatarImageView.dataSource = data[indexPath.row]
         
         return cell
     }
