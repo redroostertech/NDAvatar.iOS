@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NDAvatarView
+
 
 
 class SingleAvatarViewController:
@@ -144,7 +144,7 @@ class SingleAvatarViewController:
     func showProfilePicture() {
         var data = ExampleData()
         data.avatar = UIImage(named: "profile_pic")!
-        avatarView.avatarImageView.dataSource = data
+        avatarView.avatarImageView?.dataSource = data
         borderColorView.backgroundColor = UIColor.white
         
     }

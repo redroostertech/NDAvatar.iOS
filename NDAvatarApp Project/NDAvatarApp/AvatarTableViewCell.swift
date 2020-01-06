@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NDAvatarView
+
 
 struct TableAvatarImageConfig: AvatarImageViewConfiguration {
     let shape: Shape = .circle

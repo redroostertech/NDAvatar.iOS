@@ -10,7 +10,7 @@
         <!--Single Avatar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SingleAvatarViewController" customModule="NDAvatarExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SingleAvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="AvatarImageView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                 <rect key="frame" x="60" y="13.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
@@ -77,7 +77,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gks-MX-6gK" userLabel="BorderWidth">
                                         <rect key="frame" x="0.0" y="78" width="194" height="30"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd1-Bk-SEV" userLabel="spacer" customClass="UIViewX" customModule="AvatarImageView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd1-Bk-SEV" userLabel="spacer" customClass="UIViewX" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -109,7 +109,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tGI-a4-Ygb" userLabel="ChooseBorderColor">
                                         <rect key="frame" x="0.0" y="116" width="189.5" height="30"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2x-He-ORY" userLabel="spacer" customClass="UIViewX" customModule="AvatarImageView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2x-He-ORY" userLabel="spacer" customClass="UIViewX" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -121,7 +121,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0h-9a-51f" customClass="UIViewX" customModule="AvatarImageView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0h-9a-51f" customClass="UIViewX" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="0.0" width="51" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufm-f2-Nw9">
@@ -180,7 +180,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r4y-E4-ryA" userLabel="CornerRadius">
                                         <rect key="frame" x="0.0" y="193" width="201" height="30"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-dB-1us" userLabel="spacer" customClass="UIViewX" customModule="AvatarImageView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-dB-1us" userLabel="spacer" customClass="UIViewX" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -261,7 +261,7 @@
         <!--Avatar Table-->
         <scene sceneID="asd-BF-Tbl">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6sR-xD-ylc" customClass="AvatarTableViewController" customModule="NDAvatarExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6sR-xD-ylc" customClass="AvatarTableViewController" customModule="NDAvatarViewExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pep-Rj-Bf2"/>
                         <viewControllerLayoutGuide type="bottom" id="jG8-kQ-FkI"/>
@@ -274,14 +274,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="avatarCell" rowHeight="119" id="gYN-1N-SyK" customClass="AvatarTableViewCell" customModule="NDAvatarExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="avatarCell" rowHeight="119" id="gYN-1N-SyK" customClass="AvatarTableViewCell" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gYN-1N-SyK" id="5ZA-ht-yMe">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-sK-2tr" customClass="AvatarViewController" customModule="AvatarImageView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-sK-2tr" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="7.5" width="104" height="104"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
@@ -348,6 +348,5 @@
     <resources>
         <image name="person.3.fill" catalog="system" width="71" height="34"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="person.circle" width="16" height="16"/>
     </resources>
 </document>

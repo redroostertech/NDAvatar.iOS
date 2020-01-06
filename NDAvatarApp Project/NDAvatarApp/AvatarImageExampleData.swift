@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import NDAvatarView
 import UIKit
 
 struct ExampleData: AvatarImageViewDataSource {
