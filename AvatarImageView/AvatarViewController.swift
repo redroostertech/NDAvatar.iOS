@@ -81,7 +81,7 @@ public class AvatarViewController: UIView {
     }
     
     public func setToDefault() {
-        avatarFrame.cornerRadius = currentCorner
+        avatarFrame.cornerRadius = 0
         configureDefaultAvatar()
     }
     
