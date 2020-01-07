@@ -210,8 +210,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
-                                <rect key="frame" x="60" y="8" width="200" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="NDAvatarView">
+                                <rect key="frame" x="60" y="13.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
                                     <constraint firstAttribute="height" constant="200" id="gyh-xK-ee4"/>
@@ -281,7 +281,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-sK-2tr" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTv-sK-2tr" customClass="AvatarViewController" customModule="NDAvatarView">
                                                     <rect key="frame" x="16" y="7.5" width="104" height="104"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>

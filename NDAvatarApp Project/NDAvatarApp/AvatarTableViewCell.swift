@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NDAvatarView
 
 
 struct TableAvatarImageConfig: AvatarImageViewConfiguration {

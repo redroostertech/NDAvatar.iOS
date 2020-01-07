@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D93D253823C41DF6006FA2EB /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D93D253723C41DF6006FA2EB /* NDAvatarView */; };
-		D98B6EE423C3F3F2000F8392 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42923C3F15000FF7C2E /* UIViewX.swift */; };
+		D93D253A23C41ED4006FA2EB /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D253923C41ED3006FA2EB /* UIViewX.swift */; };
 		D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE623C3F4F1000F8392 /* colorPalette.plist */; };
 		D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */; };
 		D98B6EEB23C3F4F1000F8392 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */; };
-		D98B6EEC23C4005A000F8392 /* AvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D9546423C3EFC400AB181B /* AvatarView.xib */; };
 		D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195923C3EB7800EDC5E0 /* Main.storyboard */; };
 		D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */; };
 		D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */; };
@@ -22,16 +21,13 @@
 		D9C0196F23C3EBED00EDC5E0 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */; };
 		D9C0197023C3EBED00EDC5E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196E23C3EBED00EDC5E0 /* README.md */; };
 		D9C0197223C3EC9400EDC5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */; };
-		D9C2A42E23C3F15000FF7C2E /* AvatarImageViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42723C3F15000FF7C2E /* AvatarImageViewConfiguration.swift */; };
-		D9C2A43123C3F15000FF7C2E /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42B23C3F15000FF7C2E /* AvatarViewController.swift */; };
-		D9C2A43223C3F15000FF7C2E /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42C23C3F15000FF7C2E /* AvatarImageView.swift */; };
-		D9C2A43323C3F15000FF7C2E /* ColorCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42D23C3F15000FF7C2E /* ColorCache.swift */; };
 		D9D9545D23C3EF0F00AB181B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../NDAvatarApp/Info.plist; sourceTree = "<group>"; };
+		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
 		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
 		D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
@@ -44,13 +40,7 @@
 		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = Docs/LICENSE.md; sourceTree = SOURCE_ROOT; };
 		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Docs/README.md; sourceTree = SOURCE_ROOT; };
 		D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = NDAvatarApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		D9C2A42723C3F15000FF7C2E /* AvatarImageViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageViewConfiguration.swift; sourceTree = "<group>"; };
-		D9C2A42923C3F15000FF7C2E /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
-		D9C2A42B23C3F15000FF7C2E /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
-		D9C2A42C23C3F15000FF7C2E /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
-		D9C2A42D23C3F15000FF7C2E /* ColorCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCache.swift; sourceTree = "<group>"; };
 		D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = NDAvatarApp/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		D9D9546423C3EFC400AB181B /* AvatarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +78,6 @@
 				294E36FD1D5E0B72002230DF /* Info.plist */,
 				D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */,
 				D9C0196E23C3EBED00EDC5E0 /* README.md */,
-				D9C2A42623C3F15000FF7C2E /* NDAvatar */,
 				294E370B1D5E0FEE002230DF /* Model */,
 				294E37051D5E0E5C002230DF /* View Controllers */,
 				294E37081D5E0E86002230DF /* Views */,
@@ -113,7 +102,6 @@
 			children = (
 				D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */,
 				D9C0195923C3EB7800EDC5E0 /* Main.storyboard */,
-				D9D9546423C3EFC400AB181B /* AvatarView.xib */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -130,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */,
+				D93D253923C41ED3006FA2EB /* UIViewX.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -151,26 +140,6 @@
 			);
 			path = ColorPicker;
 			sourceTree = SOURCE_ROOT;
-		};
-		D9C2A42623C3F15000FF7C2E /* NDAvatar */ = {
-			isa = PBXGroup;
-			children = (
-				D9C2A42B23C3F15000FF7C2E /* AvatarViewController.swift */,
-				D9C2A42C23C3F15000FF7C2E /* AvatarImageView.swift */,
-				D9C2A42D23C3F15000FF7C2E /* ColorCache.swift */,
-				D9C2A42723C3F15000FF7C2E /* AvatarImageViewConfiguration.swift */,
-				D9C2A42823C3F15000FF7C2E /* Extensions */,
-			);
-			path = NDAvatar;
-			sourceTree = "<group>";
-		};
-		D9C2A42823C3F15000FF7C2E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D9C2A42923C3F15000FF7C2E /* UIViewX.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -239,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */,
-				D98B6EEC23C4005A000F8392 /* AvatarView.xib in Resources */,
 				D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */,
 				D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */,
 				D9C0197023C3EBED00EDC5E0 /* README.md in Resources */,
@@ -258,15 +226,11 @@
 			files = (
 				D9C0196823C3EBC700EDC5E0 /* AvatarTableViewController.swift in Sources */,
 				D9C0196A23C3EBD400EDC5E0 /* SingleAvatarViewController.swift in Sources */,
-				D9C2A42E23C3F15000FF7C2E /* AvatarImageViewConfiguration.swift in Sources */,
-				D9C2A43223C3F15000FF7C2E /* AvatarImageView.swift in Sources */,
 				D98B6EEB23C3F4F1000F8392 /* ColorPickerViewController.swift in Sources */,
 				D9C0196C23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift in Sources */,
-				D9C2A43123C3F15000FF7C2E /* AvatarViewController.swift in Sources */,
 				D9D9545D23C3EF0F00AB181B /* AppDelegate.swift in Sources */,
+				D93D253A23C41ED4006FA2EB /* UIViewX.swift in Sources */,
 				D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */,
-				D98B6EE423C3F3F2000F8392 /* UIViewX.swift in Sources */,
-				D9C2A43323C3F15000FF7C2E /* ColorCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
