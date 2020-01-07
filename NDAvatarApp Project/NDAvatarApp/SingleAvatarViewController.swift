@@ -44,14 +44,10 @@ class SingleAvatarViewController:
     
     @IBOutlet weak var roundMaskSwitch: UISwitch!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showProfilePicture()
-        avatarView.avatarFrame.borderWidth = 2
-        avatarView.avatarFrame.cornerRadius = 30
-        setToShowPic = true
+        configureInitialUI()
         
         createPickerView()
         dismissPickerView()
@@ -126,6 +122,14 @@ class SingleAvatarViewController:
         }
         present(popoverVC, animated: true, completion: nil)
         
+    }
+    
+    fileprivate func configureInitialUI() {
+        showProfilePicture()
+        avatarView.avatarFrame.borderWidth = 2
+//        avatarView.avatarFrame.cornerRadius = 30
+        avatarView.setToRound()
+        setToShowPic = true
     }
     
     
