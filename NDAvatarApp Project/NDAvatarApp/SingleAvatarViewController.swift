@@ -79,6 +79,7 @@ class SingleAvatarViewController:
         
         if roundMaskSwitch.isOn == true{
             avatarView.setToRound()
+            roundCornersSwitch.isOn = false
         }
         if roundMaskSwitch.isOn == false{
             avatarView.setToDefault()
@@ -90,7 +91,6 @@ class SingleAvatarViewController:
         
         if showBorderSwitch.isOn == true {
             avatarView.borderWidth = 2
-            avatarView.borderColor = UIColor.white
             borderWidthTextField.isEnabled = true
             chooseBorderColor.isEnabled = true
         }
@@ -147,14 +147,12 @@ class SingleAvatarViewController:
         var data = ExampleData()
         data.avatar = UIImage(named: "profile_pic")!
         avatarView.avatarImageView?.dataSource = data
-        borderColorView.backgroundColor = UIColor.white
         
     }
     
     func showInitials() {
         let data = NeoneData()
         avatarView.avatarImageView.dataSource = data
-        borderColorView.backgroundColor = UIColor.white
     }
     
     //ColorPickerDelegate
