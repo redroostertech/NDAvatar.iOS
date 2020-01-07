@@ -23,6 +23,8 @@ NDAvatarView is a framework for displaying profile pictures or user initials in 
 
 ## Usage
 
+THIS IS NOT UP TO DATE FROM HERE OUT
+
 To set up `AvatarImageView`, a `dataSource` that conforms to `AvatarImageViewDataSource` needs to be set. Optionally a `configuration` that conforms to `AvatarImageViewConfiguration` can also be set. The default configuration will show a square picture; and if no profile picture is supplied, it will draw the initials with the system font on a random background color.
 
 The `AvatarImageViewDataSource` contains the following members. All have default implementations and are hence optional.
