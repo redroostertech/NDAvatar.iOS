@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NDAvatarView",
+        "repositoryURL": "https://github.com/neone/NDAvatarView.git",
+        "state": {
+          "branch": "master",
+          "revision": "9aa1d00ab2e1c9d28e971318806090a63e3edb22",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

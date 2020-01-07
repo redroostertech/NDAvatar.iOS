@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93D253823C41DF6006FA2EB /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D93D253723C41DF6006FA2EB /* NDAvatarView */; };
 		D98B6EE423C3F3F2000F8392 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C2A42923C3F15000FF7C2E /* UIViewX.swift */; };
 		D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE623C3F4F1000F8392 /* colorPalette.plist */; };
 		D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */; };
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93D253823C41DF6006FA2EB /* NDAvatarView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +189,7 @@
 			);
 			name = NDAvatarView;
 			packageProductDependencies = (
+				D93D253723C41DF6006FA2EB /* NDAvatarView */,
 			);
 			productName = AvatarImageViewExample;
 			productReference = 294E36EE1D5E0B72002230DF /* NDAvatarView.app */;
@@ -219,6 +222,7 @@
 			);
 			mainGroup = 294E36E51D5E0B72002230DF;
 			packageReferences = (
+				D93D253623C41DF6006FA2EB /* XCRemoteSwiftPackageReference "NDAvatarView" */,
 			);
 			productRefGroup = 294E36EF1D5E0B72002230DF /* Products */;
 			projectDirPath = "";
@@ -375,7 +379,8 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Extension";
 				PRODUCT_NAME = NDAvatarApp;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -389,7 +394,10 @@
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
@@ -404,7 +412,10 @@
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
@@ -433,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D93D253623C41DF6006FA2EB /* XCRemoteSwiftPackageReference "NDAvatarView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neone/NDAvatarView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D93D253723C41DF6006FA2EB /* NDAvatarView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D93D253623C41DF6006FA2EB /* XCRemoteSwiftPackageReference "NDAvatarView" */;
+			productName = NDAvatarView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 294E36E61D5E0B72002230DF /* Project object */;
 }
