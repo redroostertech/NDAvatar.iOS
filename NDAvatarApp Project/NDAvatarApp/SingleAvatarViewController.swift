@@ -49,6 +49,8 @@ class SingleAvatarViewController:
         super.viewDidLoad()
         
         showProfilePicture()
+        avatarView.avatarFrame.borderWidth = 2
+        avatarView.avatarFrame.cornerRadius = 30
         setToShowPic = true
         
         createPickerView()

@@ -19,24 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
-                                <rect key="frame" x="60" y="13.5" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
-                                    <constraint firstAttribute="height" constant="200" id="gyh-xK-ee4"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRoundness">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-OK-Kf6">
                                 <rect key="frame" x="59.5" y="237.5" width="201" height="262"/>
                                 <subviews>
@@ -228,6 +210,24 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-ph-4sG" customClass="AvatarViewController" customModule="NDAvatarViewExtension" customModuleProvider="target">
+                                <rect key="frame" x="60" y="8" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZyS-ph-4sG" secondAttribute="height" multiplier="1:1" id="L9X-W7-86K"/>
+                                    <constraint firstAttribute="height" constant="200" id="gyh-xK-ee4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRoundness">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

@@ -153,11 +153,11 @@
 		D9C2A42623C3F15000FF7C2E /* NDAvatar */ = {
 			isa = PBXGroup;
 			children = (
-				D9C2A42723C3F15000FF7C2E /* AvatarImageViewConfiguration.swift */,
-				D9C2A42823C3F15000FF7C2E /* Extensions */,
 				D9C2A42B23C3F15000FF7C2E /* AvatarViewController.swift */,
 				D9C2A42C23C3F15000FF7C2E /* AvatarImageView.swift */,
 				D9C2A42D23C3F15000FF7C2E /* ColorCache.swift */,
+				D9C2A42723C3F15000FF7C2E /* AvatarImageViewConfiguration.swift */,
+				D9C2A42823C3F15000FF7C2E /* Extensions */,
 			);
 			path = NDAvatar;
 			sourceTree = "<group>";
