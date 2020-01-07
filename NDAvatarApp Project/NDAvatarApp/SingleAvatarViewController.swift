@@ -127,8 +127,7 @@ class SingleAvatarViewController:
     fileprivate func configureInitialUI() {
         showProfilePicture()
         avatarView.avatarFrame.borderWidth = 2
-//        avatarView.avatarFrame.cornerRadius = 30
-        avatarView.setToRound()
+        avatarView.avatarFrame.cornerRadius = 30
         setToShowPic = true
     }
     
