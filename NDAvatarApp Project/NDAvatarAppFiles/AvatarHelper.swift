@@ -12,9 +12,9 @@ import UIKit
 
 class AvatarHelper {
     
-    static func setDefaultAvatar(displayName: String, avatarString: String? = nil, avatarImage: UIImage? = nil, avatarView: AvatarViewController) {
+    static func setDefaultAvatar(displayName: String, avatarString: String? = nil, avatarImage: UIImage? = nil, isRound: Bool = false, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.white, avatarView: AvatarViewController) {
         
-        let avatarData = AvatarViewData(displayName: displayName, avatarString: avatarString, avatarImage: avatarImage, isRound: true, borderWidth: 2, borderColor: UIColor.white)
+        let avatarData = AvatarViewData(displayName: displayName, avatarString: avatarString, avatarImage: avatarImage, isRound: isRound, borderWidth: borderWidth, borderColor: borderColor)
         avatarView.configureAvatarView(avatarViewData: avatarData)
     }
     

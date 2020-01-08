@@ -13,7 +13,6 @@
 		D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */; };
 		D98B6EEB23C3F4F1000F8392 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */; };
 		D9AE584D23C56EEB004D5CF2 /* AvatarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */; };
-		D9AE584E23C57101004D5CF2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 294E36FD1D5E0B72002230DF /* Info.plist */; };
 		D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195923C3EB7800EDC5E0 /* Main.storyboard */; };
 		D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */; };
 		D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */; };
@@ -28,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../NDAvatarApp/Info.plist; sourceTree = "<group>"; };
 		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
 		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
@@ -197,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */,
-				D9AE584E23C57101004D5CF2 /* Info.plist in Resources */,
 				D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */,
 				D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */,
 				D9C0197023C3EBED00EDC5E0 /* README.md in Resources */,
