@@ -125,9 +125,9 @@ class SingleAvatarViewController:
     }
     
     fileprivate func configureInitialUI() {
-        showProfilePicture()
-        avatarView.avatarFrame.borderWidth = 2
-        avatarView.avatarFrame.cornerRadius = 30
+        var data = ExampleData()
+        data.avatar = UIImage(named: "profile_pic")!
+        AvatarHelper.setDefaultAvatar(displayName: data.name, avatarImage: data.avatar, avatarView: avatarView)
         setToShowPic = true
     }
     
