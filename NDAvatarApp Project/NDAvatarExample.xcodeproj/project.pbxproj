@@ -28,19 +28,19 @@
 /* Begin PBXFileReference section */
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../NDAvatarApp/Info.plist; sourceTree = "<group>"; };
-		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
-		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
-		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
-		D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
-		D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHelper.swift; sourceTree = "<group>"; };
-		D9C0195923C3EB7800EDC5E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
-		D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = ../NDAvatarApp/Utilities/UIViewX.swift; sourceTree = "<group>"; };
+		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = colorPalette.plist; path = ../../NDAvatarApp/Utilities/ColorPicker/colorPalette.plist; sourceTree = "<group>"; };
+		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = ../../NDAvatarApp/Utilities/ColorPicker/ColorPickerPopover.storyboard; sourceTree = "<group>"; };
+		D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = ../../NDAvatarApp/Utilities/ColorPicker/ColorPickerViewController.swift; sourceTree = "<group>"; };
+		D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvatarHelper.swift; path = ../NDAvatarApp/Utilities/AvatarHelper.swift; sourceTree = "<group>"; };
+		D9C0195923C3EB7800EDC5E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = NDAvatarApp/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NDAvatarApp/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarTableViewCell.swift; path = NDAvatarApp/AvatarTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarTableViewController.swift; path = NDAvatarApp/AvatarTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleAvatarViewController.swift; path = NDAvatarApp/SingleAvatarViewController.swift; sourceTree = SOURCE_ROOT; };
-		D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarImageExampleData.swift; path = NDAvatarApp/AvatarImageExampleData.swift; sourceTree = SOURCE_ROOT; };
-		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = NDAvatarAppFiles/LICENSE.md; sourceTree = SOURCE_ROOT; };
-		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = NDAvatarAppFiles/README.md; sourceTree = SOURCE_ROOT; };
+		D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarImageExampleData.swift; path = NDAvatarApp/Utilities/AvatarImageExampleData.swift; sourceTree = SOURCE_ROOT; };
+		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
+		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = NDAvatarApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = NDAvatarApp/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -77,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */,
+				D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */,
+				D9C0196E23C3EBED00EDC5E0 /* README.md */,
 				294E36FD1D5E0B72002230DF /* Info.plist */,
 				294E37061D5E0E68002230DF /* MainUI */,
 				294E370B1D5E0FEE002230DF /* Utilties */,
@@ -100,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */,
-				D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */,
-				D9C0196E23C3EBED00EDC5E0 /* README.md */,
 				D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */,
 			);
 			name = Assets;
