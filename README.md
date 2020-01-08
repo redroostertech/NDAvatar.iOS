@@ -4,7 +4,7 @@
 [![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
 
 
-NDAvatarView is a framework for displaying profile pictures or user initials in a consistent way. 
+NDAvatar is a framework for displaying profile pictures or user initials in a consistent and easy way. 
 
 #### Build Status
 
@@ -26,77 +26,13 @@ NDAvatarView is a framework for displaying profile pictures or user initials in 
 
 ## Usage
 
-THIS IS NOT UP TO DATE FROM HERE OUT
 
-To set up `AvatarImageView`, a `dataSource` that conforms to `AvatarImageViewDataSource` needs to be set. Optionally a `configuration` that conforms to `AvatarImageViewConfiguration` can also be set. The default configuration will show a square picture; and if no profile picture is supplied, it will draw the initials with the system font on a random background color.
+#### NDAvatarApp Project
 
-The `AvatarImageViewDataSource` contains the following members. All have default implementations and are hence optional.
-
-* `var name: String { get }` - Default: returns `""`
-* `var avatar: UIImage? { get }` - Default: returns `nil`
-* `var bgColor: UIColor? { get }` - Default: returns `nil` 
-* `var initials: String { get }` - Default: returns initials calculated from the name.
-* `var avatarId: Int { get }` - Default: returns the hash values of the name and initials combined using XOR.
-
-The `AvatarImageViewConfiguration` contains the following members. All have default implementations and are hence optional.
-
-* `var shape: Shape { get }` - Default: returns `.Square`
-* `var textSizeFactor: CGFloat { get }` - Default: returns `0.5`
-* `var fontName: String? { get }` - Default: returns `nil` 
-* `var bgColor: UIColor? { get }` - Default: returns in`nil`. The `bgColor` in `AvatarImageViewDataSource` will take precedence over this one.
-* `var textColor: UIColor { get }` - Default: returns `.white`.
-
-Check out the [docs](http://cocoadocs.org/docsets/AvatarImageView/) for more information.
-
-The random background colour is generated for each unique user from its `avatarId`, so if you have `AvatarImageView`s in different parts of your app, the background color for a particular user will be the same in both.
-
-The image view can be drawn as a square or circle out of the box. You can even sepcify a mask image if you want a custom shape. These settings are done in an `AvatarImageViewConfiguration`. Here are some examples for initials being drawn in different shapes.
-
-
-![Circle Initials](./Screenshots/circle_initials.png)
-![Mask Initials](./Screenshots/mask_initials.png)
-
-Here's an example of when the `dataSource` supplies a profile picture and the `configuration` is set to a circle.
-
-![Circle Profile Pic](./Screenshots/circle_profile_pic.png)
-
-It works great with custom fonts!
-
-
-![Custom Font](./Screenshots/circle_custom_font.png)
-
-...and also with `UITableView`s
-
-
-![Table View Pics](./Screenshots/table_view.png)
-
-#### Example Project
-
-Please refer to the example project in this repository for an implementation of all the above use cases. If you find any bugs, open a GitHub issue!
+Please refer to the example project in this repository as an implementation of the framework. If you find any bugs, open a GitHub issue!
 
 #### Gotchas
 
-1. Always set the `configuration` before the `dataSource`. If you don't, you will need to manually call `refresh()` to render the view correctly.
-
-2. When implementing the `AvatarImageViewDataSource` and `AvatarImageViewConfiguration` protocols, you will need to explicitly define the type for any protocol member that is an optional otherwise Swift goes insane.
-
-For example, `AvatarImageViewConfiguration` has a type called `var fontName: String?` that returns `nil` by default. To implement this in a `struct`, define it as follows:
-
-```swift
-struct Config: AvatarImageViewConfiguration {
-    var fontName: String? = "Futura-Medium"        
-}
-```
-	
-Defining it as:
-
-```swift
-struct Config: AvatarImageViewConfiguration {
-    var fontName = "Futura-Medium"
-}
-```
-
-... will not work :(
 
 ## Documentation
 
@@ -108,6 +44,9 @@ AvatarImageView requires at least iOS 12.
 ## Installation
 
 ## Release Notes
+
+#### 3.0
+Added Swift 5.0 support. Converted project from AvatarImageView to NDAvatar 
 
 #### 2.2.0
 Added Swift 4.2 support
