@@ -39,8 +39,8 @@
 		D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarTableViewController.swift; path = NDAvatarApp/AvatarTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleAvatarViewController.swift; path = NDAvatarApp/SingleAvatarViewController.swift; sourceTree = SOURCE_ROOT; };
 		D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarImageExampleData.swift; path = NDAvatarApp/Utilities/AvatarImageExampleData.swift; sourceTree = SOURCE_ROOT; };
-		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
-		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = SOURCE_ROOT; };
+		D9C0196E23C3EBED00EDC5E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
 		D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = NDAvatarApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = NDAvatarApp/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
