@@ -4,7 +4,7 @@
 [![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
 
 
-Preview the great functionality of the NDAvatar framework with this example app. NDAvatar is a Swift framework for displaying profile pictures or user initials in a consistent and easy way. Note that this app utilizes the NDAvatar framework which is not included in this project directly, but rather is pulled in as a Swift Package. The NDAvatar framework is also open source and available under the MIT License 
+Preview the great functionality of the NDAvatar framework with this example app. NDAvatar is a Swift framework for displaying profile pictures or user initials in a consistent and easy way. This app utilizes the NDAvatar framework as a Swift Package pulled directly from its repository. The NDAvatar framework is also open source and available under the MIT License 
 
 #### Build Status
 
