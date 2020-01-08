@@ -351,6 +351,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
@@ -369,6 +370,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDAvatarView;
 				PRODUCT_NAME = NDAvatarView;
 				SWIFT_VERSION = 5.0;
