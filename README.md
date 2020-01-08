@@ -17,6 +17,7 @@ NDAvatarView is a framework for displaying profile pictures or user initials in 
 
 `NDAvatarView` is a framework combining an instance of `AvatarImageView` with custom UI options for more flexibiity.
 
+![BannerImage](./Images/Screenshot1.png)   ![BannerImage](./Images/Screenshot2.png)   ![BannerImage](./Images/Screenshot3.png)   ![BannerImage](./Images/Screenshot4.png)
 
 `AvatarImageView` is a customisable subclass of UIImageView that is designed to show users' profile pictures. It falls back to the user's initials with a random background color if no profile picture is supplied.
 
