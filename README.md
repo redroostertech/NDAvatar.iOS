@@ -31,8 +31,6 @@ Preview the great functionality of the NDAvatar framework with this example app.
 
 Please refer to the example project in this repository as an implementation of the framework. If you find any bugs, open a GitHub issue!
 
-#### Gotchas
-
 
 ## Documentation
 
