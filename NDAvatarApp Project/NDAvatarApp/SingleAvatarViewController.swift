@@ -117,6 +117,7 @@ class SingleAvatarViewController:
         //example data does not include pic, so let's add one here for the demo
         data.avatar = UIImage(named: "profile_pic")!
 
+        //Here is where you should set all the parameters of your Avatar View. Profile pics can be uploaded as UIImages or as Base64 encoded strings that will be converted by the framework.
         AvatarHelper.setDefaultAvatar(displayName: data.name, avatarString: nil, avatarImage: data.avatar, isRound: false, borderWidth: 2.0, borderColor: UIColor.white, avatarView: avatarView)
     }
     
@@ -145,7 +146,6 @@ class SingleAvatarViewController:
         struct Config: AvatarImageViewConfiguration {
             var shape: Shape = .circle
             var fontName: String? = "Futura-Medium"
-            
         }
         avatarView.avatarImageView.configuration = Config()
     }
@@ -153,12 +153,14 @@ class SingleAvatarViewController:
     fileprivate func showProfilePicture() {
         var data = ExampleData()
         data.avatar = UIImage(named: "profile_pic")!
+        //we have left the raw views as public for direct access like this, but you could achieve the same results with the AvatarHelper
         avatarView.avatarImageView?.dataSource = data
         
     }
     
     fileprivate func showInitials() {
         let data = NeoneData()
+        //we have left the raw views as public for direct access like this, but you could achieve the same results with the AvatarHelper
         avatarView.avatarImageView.dataSource = data
     }
 }
