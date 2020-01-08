@@ -1,3 +1,5 @@
+![BannerImage](./Images/NDAvatarGitHubBanner.png)
+
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
 
@@ -49,7 +51,7 @@ The random background colour is generated for each unique user from its `avatarI
 
 The image view can be drawn as a square or circle out of the box. You can even sepcify a mask image if you want a custom shape. These settings are done in an `AvatarImageViewConfiguration`. Here are some examples for initials being drawn in different shapes.
 
-![Square Initials](./Screenshots/square_initials.png)
+
 ![Circle Initials](./Screenshots/circle_initials.png)
 ![Mask Initials](./Screenshots/mask_initials.png)
 
