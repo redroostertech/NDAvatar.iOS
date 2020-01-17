@@ -46,6 +46,8 @@ AvatarImageView requires at least iOS 12.
 #### 3.0
 Added Swift 5.0 support. Converted project from AvatarImageView to NDAvatar 
 
+#### NDAvatar forked from AvatarImageView
+
 #### 2.2.0
 Added Swift 4.2 support
 
