@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D931B99523D5B5C200BCDCA0 /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */; };
 		D93D253823C41DF6006FA2EB /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D93D253723C41DF6006FA2EB /* NDAvatarView */; };
-		D93D253A23C41ED4006FA2EB /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D253923C41ED3006FA2EB /* UIViewX.swift */; };
+		D94845B123D5B43000BD77E8 /* SingleAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */; };
+		D94845B223D5B43300BD77E8 /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */; };
+		D94845B323D5B43600BD77E8 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */; };
+		D94845B523D5B46900BD77E8 /* AvatarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */; };
+		D94845B623D5B47600BD77E8 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D253923C41ED3006FA2EB /* UIViewX.swift */; };
+		D94845B723D5B48800BD77E8 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */; };
 		D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE623C3F4F1000F8392 /* colorPalette.plist */; };
 		D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */; };
-		D98B6EEB23C3F4F1000F8392 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */; };
-		D9AE584D23C56EEB004D5CF2 /* AvatarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */; };
 		D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195923C3EB7800EDC5E0 /* Main.storyboard */; };
 		D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */; };
-		D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */; };
-		D9C0196823C3EBC700EDC5E0 /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */; };
-		D9C0196A23C3EBD400EDC5E0 /* SingleAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */; };
-		D9C0196C23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */; };
 		D9C0196F23C3EBED00EDC5E0 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196D23C3EBED00EDC5E0 /* LICENSE.md */; };
 		D9C0197023C3EBED00EDC5E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9C0196E23C3EBED00EDC5E0 /* README.md */; };
 		D9C0197223C3EC9400EDC5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C0197123C3EC9300EDC5E0 /* Assets.xcassets */; };
@@ -27,11 +27,11 @@
 
 /* Begin PBXFileReference section */
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../NDAvatarApp/Info.plist; sourceTree = "<group>"; };
-		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = NDAvatarApp/Utilities/UIViewX.swift; sourceTree = "<group>"; };
-		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = colorPalette.plist; path = NDAvatarApp/Utilities/ColorPicker/colorPalette.plist; sourceTree = "<group>"; };
-		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ColorPickerPopover.storyboard; path = NDAvatarApp/Utilities/ColorPicker/ColorPickerPopover.storyboard; sourceTree = "<group>"; };
-		D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = NDAvatarApp/Utilities/ColorPicker/ColorPickerViewController.swift; sourceTree = "<group>"; };
+		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NDAvatarApp/Info.plist; sourceTree = "<group>"; };
+		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = NDAvatarApp/UIViewX.swift; sourceTree = "<group>"; };
+		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
+		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
+		D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		D9AE584C23C56EEB004D5CF2 /* AvatarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvatarHelper.swift; path = NDAvatarApp/Utilities/AvatarHelper.swift; sourceTree = "<group>"; };
 		D9C0195923C3EB7800EDC5E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = NDAvatarApp/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		D9C0195A23C3EB7800EDC5E0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NDAvatarApp/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -60,7 +60,7 @@
 		294E36E51D5E0B72002230DF = {
 			isa = PBXGroup;
 			children = (
-				294E36F01D5E0B72002230DF /* NDAvatarAppFiles */,
+				294E36F01D5E0B72002230DF /* NDAvatarApp Project */,
 				294E36EF1D5E0B72002230DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		294E36F01D5E0B72002230DF /* NDAvatarAppFiles */ = {
+		294E36F01D5E0B72002230DF /* NDAvatarApp Project */ = {
 			isa = PBXGroup;
 			children = (
 				D9D9545C23C3EF0F00AB181B /* AppDelegate.swift */,
@@ -84,7 +84,7 @@
 				294E370B1D5E0FEE002230DF /* Utilties */,
 				294E37071D5E0E7E002230DF /* Assets */,
 			);
-			path = NDAvatarAppFiles;
+			name = "NDAvatarApp Project";
 			sourceTree = "<group>";
 		};
 		294E37061D5E0E68002230DF /* MainUI */ = {
@@ -126,7 +126,7 @@
 				D98B6EE823C3F4F1000F8392 /* ColorPickerViewController.swift */,
 			);
 			name = ColorPicker;
-			path = NDAvatarAppFiles/ColorPicker;
+			path = NDAvatarApp/Utilities/ColorPicker;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -212,14 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C0196823C3EBC700EDC5E0 /* AvatarTableViewController.swift in Sources */,
-				D9C0196A23C3EBD400EDC5E0 /* SingleAvatarViewController.swift in Sources */,
-				D98B6EEB23C3F4F1000F8392 /* ColorPickerViewController.swift in Sources */,
-				D9C0196C23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift in Sources */,
-				D9AE584D23C56EEB004D5CF2 /* AvatarHelper.swift in Sources */,
+				D94845B523D5B46900BD77E8 /* AvatarHelper.swift in Sources */,
 				D9D9545D23C3EF0F00AB181B /* AppDelegate.swift in Sources */,
-				D93D253A23C41ED4006FA2EB /* UIViewX.swift in Sources */,
-				D9C0196623C3EBBF00EDC5E0 /* AvatarTableViewCell.swift in Sources */,
+				D94845B123D5B43000BD77E8 /* SingleAvatarViewController.swift in Sources */,
+				D94845B223D5B43300BD77E8 /* AvatarTableViewController.swift in Sources */,
+				D94845B323D5B43600BD77E8 /* AvatarTableViewCell.swift in Sources */,
+				D94845B623D5B47600BD77E8 /* UIViewX.swift in Sources */,
+				D94845B723D5B48800BD77E8 /* ColorPickerViewController.swift in Sources */,
+				D931B99523D5B5C200BCDCA0 /* AvatarImageExampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
