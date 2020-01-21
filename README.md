@@ -6,6 +6,8 @@
 
 Preview the great functionality of the NDAvatar framework with this example app. NDAvatar is a Swift framework for displaying profile pictures or user initials in a consistent and easy way. This app utilizes the NDAvatar framework as a Swift Package pulled directly from its repository. The NDAvatar framework is also open source and available under the MIT License 
 
+[NDAvatar](https://github.com/neone/NDAvatar)
+
 #### Build Status
 
 | Branch  | Build Status |
