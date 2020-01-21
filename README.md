@@ -1,4 +1,4 @@
-![BannerImage](./Images/NDAvatarGitHubBanner.png)
+![BannerImage](./Images/NDAvatarAppGitHubBanner.png)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
