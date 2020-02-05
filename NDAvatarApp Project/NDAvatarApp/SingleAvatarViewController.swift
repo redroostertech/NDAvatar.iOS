@@ -28,7 +28,8 @@ class SingleAvatarViewController:
     var cornerRadiusArray = [Int](0...100)
     var cornerRadius: Int?
     
-    @IBOutlet var avatarView: AvatarViewController!
+    
+    @IBOutlet weak var avatarView: AvatarViewController!
     
     @IBOutlet weak var showProfilePic: UISwitch!
     
@@ -215,13 +216,13 @@ extension SingleAvatarViewController {
             borderWidth = borderWidthArray[row]
             let textTitle = String(row)
             borderWidthTextField.text = textTitle
-            avatarView.borderWidth = CGFloat(row)
+            avatarView.borderWidth = Double(row)
         }
         if pickerView == radiusPickerView {
             cornerRadius = cornerRadiusArray[row]
             let textTitle = String(row)
             cornerRadiusTextField.text = textTitle
-            avatarView.cornerRoundness = CGFloat(row)
+            avatarView.cornerRoundness = Double(row)
         }
     }
     

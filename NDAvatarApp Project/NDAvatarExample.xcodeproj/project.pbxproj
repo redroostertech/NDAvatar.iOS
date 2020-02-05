@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D902288C23EAF69D00633568 /* AvatarTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D902288B23EAF69D00633568 /* AvatarTable.storyboard */; };
 		D931B99523D5B5C200BCDCA0 /* AvatarImageExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196B23C3EBDE00EDC5E0 /* AvatarImageExampleData.swift */; };
+		D933E48D23EAEE5100763AC4 /* SingleAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D933E48C23EAEE5100763AC4 /* SingleAvatar.storyboard */; };
 		D93D253823C41DF6006FA2EB /* NDAvatarView in Frameworks */ = {isa = PBXBuildFile; productRef = D93D253723C41DF6006FA2EB /* NDAvatarView */; };
 		D94845B123D5B43000BD77E8 /* SingleAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */; };
 		D94845B223D5B43300BD77E8 /* AvatarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		294E36EE1D5E0B72002230DF /* NDAvatarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDAvatarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E36FD1D5E0B72002230DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NDAvatarApp/Info.plist; sourceTree = "<group>"; };
+		D902288B23EAF69D00633568 /* AvatarTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AvatarTable.storyboard; sourceTree = "<group>"; };
+		D933E48C23EAEE5100763AC4 /* SingleAvatar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SingleAvatar.storyboard; path = NDAvatarApp/SingleAvatar.storyboard; sourceTree = "<group>"; };
 		D93D253923C41ED3006FA2EB /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = NDAvatarApp/UIViewX.swift; sourceTree = "<group>"; };
 		D98B6EE623C3F4F1000F8392 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
 		D98B6EE723C3F4F1000F8392 /* ColorPickerPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPickerPopover.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				D9C0195923C3EB7800EDC5E0 /* Main.storyboard */,
+				D902288B23EAF69D00633568 /* AvatarTable.storyboard */,
+				D933E48C23EAEE5100763AC4 /* SingleAvatar.storyboard */,
 				D9C0196923C3EBD400EDC5E0 /* SingleAvatarViewController.swift */,
 				D9C0196723C3EBC700EDC5E0 /* AvatarTableViewController.swift */,
 				D9C0196523C3EBBF00EDC5E0 /* AvatarTableViewCell.swift */,
@@ -197,11 +203,13 @@
 			files = (
 				D9C0195B23C3EB7800EDC5E0 /* Main.storyboard in Resources */,
 				D98B6EE923C3F4F1000F8392 /* colorPalette.plist in Resources */,
+				D902288C23EAF69D00633568 /* AvatarTable.storyboard in Resources */,
 				D98B6EEA23C3F4F1000F8392 /* ColorPickerPopover.storyboard in Resources */,
 				D9C0197023C3EBED00EDC5E0 /* README.md in Resources */,
 				D9C0195C23C3EB7800EDC5E0 /* LaunchScreen.storyboard in Resources */,
 				D9C0197223C3EC9400EDC5E0 /* Assets.xcassets in Resources */,
 				D9C0196F23C3EBED00EDC5E0 /* LICENSE.md in Resources */,
+				D933E48D23EAEE5100763AC4 /* SingleAvatar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Extension";
@@ -327,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Extension";
 				PRODUCT_NAME = NDAvatarApp;
@@ -346,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				INFOPLIST_FILE = "$(SRCROOT)/NDAvatarApp/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -29,9 +29,13 @@ Preview the great functionality of the NDAvatar framework with this example app.
 ## Usage
 
 
-#### NDAvatarApp Project
+#### NDAvatarApp
 
-Please refer to the example project in this repository as an implementation of the framework. If you find any bugs, open a GitHub issue!
+The NDAvatarApp is designed to showcase the various customization options of the NDAvatarFramework. The app has two main views, the single avatar view and a table view.
+
+
+If you find any bugs, open a GitHub issue!
+
 
 
 ## Documentation
