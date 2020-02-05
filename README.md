@@ -8,12 +8,9 @@ Preview the great functionality of the NDAvatar framework with this example app.
 
 [NDAvatar Framework](https://github.com/neone/NDAvatar)
 
-#### Build Status
+If you are looking for an easy way to pick or edit your user images you might want to check out our companion framework NDImageManager.
 
-| Branch  | Build Status |
-| ------------- | ------------- |
-| Develop  | [![Build Status](https://travis-ci.org/ayushn21/AvatarImageView.svg?branch=develop)](https://travis-ci.org/ayushn21/AvatarImageView)|
-| Master  | [![Build Status](https://travis-ci.org/ayushn21/AvatarImageView.svg?branch=master)](https://travis-ci.org/ayushn21/AvatarImageView)|
+[NDImageApp](https://github.com/neone/NDImageApp)
 
 ## Description
 
@@ -24,6 +21,7 @@ Preview the great functionality of the NDAvatar framework with this example app.
 `AvatarImageView` is a customisable subclass of UIImageView that is designed to show users' profile pictures. It falls back to the user's initials with a random background color if no profile picture is supplied.
 
 `UIViewX` is a UiView extension allowing IBDesigable options for border width, border color, corner radius, and other customizations.
+
 
 
 ## Usage
