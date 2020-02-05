@@ -77,6 +77,10 @@ NDAvatar requires at least iOS 13.
 
 ## Installation
 
+The NDAvatarApp includes the NDAvatar framework as a Swift Package. To install the app simply download this project and build it in Xcode. To install the framework in your app simple add the NDAvatar framework in your Xcode project settings
+
+![Packagemage](./Images/swiftpackage.png)
+
 ## Release Notes
 
 #### 3.0
