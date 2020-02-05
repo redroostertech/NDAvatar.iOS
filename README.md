@@ -1,12 +1,12 @@
 ![BannerImage](./Images/NDAvatarAppGitHubBanner.png)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Swift Version](https://img.shields.io/badge/Language-Swift%202.2,%202.3,%203,%204%20&%204.2-orange.svg)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Language-Swift%205-orange.svg)](https://developer.apple.com/swift)
 
 
 Preview the great functionality of the NDAvatar framework with this example app. NDAvatar is a Swift framework for displaying profile pictures or user initials in a consistent and easy way. This app utilizes the NDAvatar framework as a Swift Package pulled directly from its repository. The NDAvatar framework is also open source and available under the MIT License 
 
-[NDAvatar](https://github.com/neone/NDAvatar)
+[NDAvatar Framework](https://github.com/neone/NDAvatar)
 
 #### Build Status
 
@@ -31,7 +31,7 @@ Preview the great functionality of the NDAvatar framework with this example app.
 
 #### NDAvatarApp
 
-The NDAvatarApp is designed to showcase the various customization options of the NDAvatarFramework. The app has two main views, the single avatar view and a table view. In the single avatar view you will can experiment with the available customizations. Here is how the single view looks in Xcode. To add an AvatarView in Interface Builder simply drag a UIView in and set the class to AvatarViewController. Make sure to also set the module to NDAvatarView. Notice that we have used runtime attributes to set the initial values. 
+The NDAvatarApp is designed to showcase the various customization options of the NDAvatarFramework. The app has two main views, the single avatar view and a table view. In the single avatar view you can experiment with the available customizations. Here is how the single view looks in Xcode. To add an AvatarView in Interface Builder simply drag a UIView in and set the class to AvatarViewController. Make sure to also set the module to NDAvatarView. Notice that we have used runtime attributes to set the initial values. 
 
 Please note that due to current Swift Package limitations the Designables will show as Build Failed like in screenshot. This does not affect the end result, it only prevents live updates in Interface Builder. We are awaiting a fix. 
 
@@ -77,7 +77,7 @@ NDAvatar requires at least iOS 13.
 
 ## Installation
 
-The NDAvatarApp includes the NDAvatar framework as a Swift Package. To install the app simply download this project and build it in Xcode. To install the framework in your app simple add the NDAvatar framework in your Xcode project settings
+The NDAvatarApp includes the NDAvatar framework as a Swift Package. To install the app simply download this project and build it in Xcode. To install the framework in your app add the NDAvatar framework in your Xcode project settings
 
 ![Packagemage](./Images/swiftpackage.png)
 
