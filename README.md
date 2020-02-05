@@ -40,6 +40,10 @@ Please note that due to current Swift Package limitations the Designables will s
 
 If you find any bugs, open a GitHub issue!
 
+
+## Documentation
+
+
 On the code side of things make sure to import the framework into your Swift file
 
 ```swift
@@ -67,13 +71,9 @@ Included in this example app is the AvatarHelper.swift file we created internall
 ```
 
 
-
-## Documentation
-
-
 ## Requirements
 
-AvatarImageView requires at least iOS 12.
+NDAvatar requires at least iOS 13.
 
 ## Installation
 
