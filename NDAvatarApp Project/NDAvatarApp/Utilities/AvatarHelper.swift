@@ -17,5 +17,4 @@ class AvatarHelper {
         let avatarData = AvatarViewData(displayName: displayName, avatarString: avatarString, avatarImage: avatarImage, isRound: isRound, borderWidth: borderWidth, borderColor: borderColor)
         avatarView.configureAvatarView(avatarViewData: avatarData)
     }
-    
 }

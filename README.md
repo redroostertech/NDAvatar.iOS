@@ -31,10 +31,40 @@ Preview the great functionality of the NDAvatar framework with this example app.
 
 #### NDAvatarApp
 
-The NDAvatarApp is designed to showcase the various customization options of the NDAvatarFramework. The app has two main views, the single avatar view and a table view.
+The NDAvatarApp is designed to showcase the various customization options of the NDAvatarFramework. The app has two main views, the single avatar view and a table view. In the single avatar view you will can experiment with the available customizations. Here is how the single view looks in Xcode. To add an AvatarView in Interface Builder simply drag a UIView in and set the class to AvatarViewController. Make sure to also set the module to NDAvatarView. Notice that we have used runtime attributes to set the initial values. 
+
+Please note that due to current Swift Package limitations the Designables will show as Build Failed like in screenshot. This does not affect the end result, it only prevents live updates in Interface Builder. We are awaiting a fix. 
+
+![XcodeImage](./Images/SingleAvatarIB.png)
 
 
 If you find any bugs, open a GitHub issue!
+
+On the code side of things make sure to import the framework into your Swift file
+
+```swift
+    import NDAvatarView
+```
+
+then create an IBOutlet from the view. If you have set the class correctly it should look like this
+
+```swift
+    @IBOutlet weak var avatarView: AvatarViewController!
+```
+
+Included in this example app is the AvatarHelper.swift file we created internally at Neone. This abstracts the setup needed for the NDAvatarView and lets you setup the view with the basic variables you will be dealing with like a name string, image, or image data. You could of course call the methods AvatarHelper uses directly, but we have found this method simpler. If you include AvatarHelper.swift in your app you can then use this same approach.
+
+```swift
+    class AvatarHelper {
+        
+        static func setDefaultAvatar(displayName: String, avatarString: String? = nil, avatarImage: UIImage? = nil, isRound: Bool = false, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.white, avatarView: AvatarViewController) {
+            
+            let avatarData = AvatarViewData(displayName: displayName, avatarString: avatarString, avatarImage: avatarImage, isRound: isRound, borderWidth: borderWidth, borderColor: borderColor)
+            avatarView.configureAvatarView(avatarViewData: avatarData)
+        }
+    }
+
+```
 
 
 
