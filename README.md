@@ -12,6 +12,11 @@ If you are looking for an easy way to pick or edit your user images you might wa
 
 [NDImageApp](https://github.com/neone/NDImageApp)
 
+If you are looking for an Android solution for Avatars we have a companion project built in Kotlin
+
+[NDAvatar.Android](https://github.com/neone/NDAvatar.Android)
+
+
 ## Description
 
 `NDAvatarView` is a framework combining an instance of `AvatarImageView` with custom UI options for more flexibiity.
